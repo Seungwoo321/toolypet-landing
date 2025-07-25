@@ -16,34 +16,40 @@ export function HeroSection({ translations }: HeroSectionProps) {
       {/* Animated gradient background */}
       <div className="absolute inset-0 gradient-bg opacity-20" />
       
-      {/* 3D floating orbs */}
+      {/* 3D floating orbs - simplified for mobile performance */}
       <div className="absolute inset-0">
         <motion.div
-          className="absolute top-20 left-20 w-72 h-72 bg-purple-500 rounded-full blur-3xl opacity-30"
+          className="absolute top-20 left-10 sm:left-20 w-32 sm:w-72 h-32 sm:h-72 bg-purple-500 rounded-full blur-3xl opacity-20 sm:opacity-30"
           animate={{
-            x: [0, 100, 0],
-            y: [0, -50, 0],
+            x: [0, 50, 0],
+            y: [0, -25, 0],
           }}
           transition={{
             duration: 20,
             repeat: Infinity,
             ease: "easeInOut",
           }}
+          style={{
+            willChange: 'transform',
+          }}
         />
         <motion.div
-          className="absolute bottom-20 right-20 w-96 h-96 bg-blue-500 rounded-full blur-3xl opacity-30"
+          className="absolute bottom-20 right-10 sm:right-20 w-48 sm:w-96 h-48 sm:h-96 bg-blue-500 rounded-full blur-3xl opacity-20 sm:opacity-30"
           animate={{
-            x: [0, -100, 0],
-            y: [0, 50, 0],
+            x: [0, -50, 0],
+            y: [0, 25, 0],
           }}
           transition={{
             duration: 25,
             repeat: Infinity,
             ease: "easeInOut",
           }}
+          style={{
+            willChange: 'transform',
+          }}
         />
         <motion.div
-          className="absolute top-1/2 left-1/3 w-64 h-64 bg-pink-500 rounded-full blur-3xl opacity-20"
+          className="hidden sm:block absolute top-1/2 left-1/3 w-64 h-64 bg-pink-500 rounded-full blur-3xl opacity-20"
           animate={{
             scale: [1, 1.2, 1],
           }}
@@ -52,6 +58,9 @@ export function HeroSection({ translations }: HeroSectionProps) {
             repeat: Infinity,
             ease: "easeInOut",
           }}
+          style={{
+            willChange: 'transform',
+          }}
         />
       </div>
 
@@ -59,7 +68,7 @@ export function HeroSection({ translations }: HeroSectionProps) {
       <div className="w-full px-6 sm:px-12 lg:px-24">
         <div className="text-center relative z-10">
         <motion.h1
-          className="text-7xl md:text-9xl font-bold mb-4"
+          className="text-5xl sm:text-7xl md:text-9xl font-bold mb-4"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -69,7 +78,7 @@ export function HeroSection({ translations }: HeroSectionProps) {
         </motion.h1>
         
         <motion.p
-          className="text-2xl md:text-4xl font-bold mb-3 text-black dark:text-gray-300"
+          className="text-xl sm:text-2xl md:text-4xl font-bold mb-3 text-black dark:text-gray-300"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -79,7 +88,7 @@ export function HeroSection({ translations }: HeroSectionProps) {
         </motion.p>
         
         <motion.p
-          className="text-xl md:text-2xl text-black dark:text-gray-400 mb-8"
+          className="text-lg sm:text-xl md:text-2xl text-black dark:text-gray-400 mb-8 px-4 sm:px-0"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

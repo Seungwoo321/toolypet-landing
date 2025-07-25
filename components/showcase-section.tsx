@@ -5,9 +5,9 @@ import Image from 'next/image'
 
 export function ShowcaseSection() {
   return (
-    <section className="min-h-screen flex items-center py-20" style={{ backgroundColor: 'var(--background)' }}>
-      <div className="w-full px-6 sm:px-12 lg:px-24 py-20">
-        <div className="space-y-32">
+    <section className="min-h-auto md:min-h-screen flex items-center py-12 sm:py-20" style={{ backgroundColor: 'var(--background)' }}>
+      <div className="w-full px-6 sm:px-12 lg:px-24 py-10 sm:py-20">
+        <div className="space-y-16 sm:space-y-32">
         <motion.div
           id="showcase-devtools"
           initial={{ opacity: 0, y: 50 }}
@@ -28,12 +28,12 @@ export function ShowcaseSection() {
             </a>
           </div>
           <motion.div
-            className="relative h-96 bg-gradient-to-br from-blue-500 to-purple-600 dark:from-blue-400 dark:to-purple-500 rounded-2xl overflow-hidden shadow-2xl"
+            className="relative h-64 sm:h-96 bg-gradient-to-br from-blue-500 to-purple-600 dark:from-blue-400 dark:to-purple-500 rounded-2xl overflow-hidden shadow-2xl"
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-white dark:text-gray-100 text-6xl font-bold opacity-40">DevTools</div>
+              <div className="text-white dark:text-gray-100 text-4xl sm:text-6xl font-bold opacity-40">DevTools</div>
             </div>
           </motion.div>
         </motion.div>
@@ -47,12 +47,12 @@ export function ShowcaseSection() {
           className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-24"
         >
           <motion.div
-            className="relative h-96 bg-gradient-to-br from-pink-500 to-red-500 dark:from-pink-400 dark:to-red-400 rounded-2xl overflow-hidden shadow-2xl order-2 md:order-1"
+            className="relative h-64 sm:h-96 bg-gradient-to-br from-pink-500 to-red-500 dark:from-pink-400 dark:to-red-400 rounded-2xl overflow-hidden shadow-2xl order-2 md:order-1"
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-white dark:text-gray-100 text-6xl font-bold opacity-40">CSS Studio</div>
+              <div className="text-white dark:text-gray-100 text-4xl sm:text-6xl font-bold opacity-40">CSS Studio</div>
             </div>
           </motion.div>
           <div className="order-1 md:order-2">
@@ -88,12 +88,12 @@ export function ShowcaseSection() {
             </a>
           </div>
           <motion.div
-            className="relative h-96 bg-gradient-to-br from-green-500 to-teal-500 dark:from-green-400 dark:to-teal-400 rounded-2xl overflow-hidden shadow-2xl"
+            className="relative h-64 sm:h-96 bg-gradient-to-br from-green-500 to-teal-500 dark:from-green-400 dark:to-teal-400 rounded-2xl overflow-hidden shadow-2xl"
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-white dark:text-gray-100 text-6xl font-bold opacity-40">SEO Tools</div>
+              <div className="text-white dark:text-gray-100 text-4xl sm:text-6xl font-bold opacity-40">SEO Tools</div>
             </div>
           </motion.div>
         </motion.div>
@@ -107,12 +107,12 @@ export function ShowcaseSection() {
           className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center"
         >
           <motion.div
-            className="relative h-96 bg-gradient-to-br from-orange-500 to-yellow-500 dark:from-orange-400 dark:to-yellow-400 rounded-2xl overflow-hidden shadow-2xl order-2 md:order-1"
+            className="relative h-64 sm:h-96 bg-gradient-to-br from-orange-500 to-yellow-500 dark:from-orange-400 dark:to-yellow-400 rounded-2xl overflow-hidden shadow-2xl order-2 md:order-1"
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-white dark:text-gray-100 text-6xl font-bold opacity-40">Security</div>
+              <div className="text-white dark:text-gray-100 text-4xl sm:text-6xl font-bold opacity-40">Security</div>
             </div>
           </motion.div>
           <div className="order-1 md:order-2">

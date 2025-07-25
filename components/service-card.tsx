@@ -22,7 +22,7 @@ export function ServiceCard({ id, title, description, icon, color, delay, viewMo
       transition={{ duration: 0.8, delay }}
       viewport={{ once: true }}
     >
-      <div className="h-full bg-white dark:bg-blue-950/20 backdrop-blur rounded-3xl shadow-lg hover:shadow-2xl dark:hover:shadow-blue-900/30 transition-all duration-300 border border-blue-100 dark:border-blue-800/50 group-hover:scale-[1.02] p-8 group-hover:border-blue-200 dark:group-hover:border-blue-700">
+      <div className="h-full bg-white dark:bg-blue-950/20 backdrop-blur rounded-3xl shadow-lg hover:shadow-2xl dark:hover:shadow-blue-900/30 transition-all duration-300 border border-blue-100 dark:border-blue-800/50 group-hover:scale-[1.02] p-6 sm:p-8 group-hover:border-blue-200 dark:group-hover:border-blue-700 touch-manipulation">
         {/* Icon with enhanced styling */}
         <div className={`w-18 h-18 rounded-2xl bg-gradient-to-br ${color} p-4 flex items-center justify-center shadow-lg group-hover:shadow-xl mb-6 transition-all duration-300`}>
           <div className="text-white dark:text-gray-100 scale-110">
@@ -38,7 +38,7 @@ export function ServiceCard({ id, title, description, icon, color, delay, viewMo
         
         {/* Enhanced link with better styling */}
         <div className="flex items-center justify-between">
-          <a href={`#showcase-${id}`} className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-semibold group-hover:gap-3 group-hover:text-blue-700 dark:group-hover:text-blue-300 transition-all">
+          <a href={`#showcase-${id}`} className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-semibold group-hover:gap-3 group-hover:text-blue-700 dark:group-hover:text-blue-300 transition-all touch-manipulation py-2 -ml-2 pl-2 pr-4 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-950/30">
             <span>{viewMoreText}</span>
             <span className="transition-transform group-hover:translate-x-1">→</span>
           </a>

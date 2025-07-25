@@ -2,7 +2,7 @@
 
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
-import { Globe } from 'lucide-react'
+import { Globe, Menu, X } from 'lucide-react'
 import { useState } from 'react'
 import { type Locale } from '@/lib/i18n/translations'
 import { ThemeToggle } from './theme-toggle'
@@ -18,6 +18,7 @@ const localeNames = {
 export function Navigation({ currentLocale }: { currentLocale: Locale }) {
   const pathname = usePathname()
   const [isLangOpen, setIsLangOpen] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const switchLocale = (newLocale: Locale) => {
     const segments = pathname.split('/')
@@ -33,7 +34,7 @@ export function Navigation({ currentLocale }: { currentLocale: Locale }) {
             Toolypet
           </Link>
           
-          <div className="flex items-center gap-4 md:gap-6">
+          <div className="flex items-center gap-4">
             <div className="hidden md:flex items-center gap-6">
               <Link href={`/${currentLocale}#services`} className="text-gray-800 dark:text-gray-200 hover:text-blue-600 transition-colors font-medium">
                 Services
@@ -73,9 +74,47 @@ export function Navigation({ currentLocale }: { currentLocale: Locale }) {
               </div>
               
               <ThemeToggle />
+              
+              {/* Mobile menu button */}
+              <button
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="md:hidden p-2 rounded-lg text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                aria-label="Toggle menu"
+              >
+                {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              </button>
             </div>
           </div>
         </div>
+        
+        {/* Mobile menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden border-t border-gray-200/20 bg-white/95 dark:bg-black/95 backdrop-blur-lg">
+            <div className="px-6 py-4 space-y-3">
+              <Link 
+                href={`/${currentLocale}#services`} 
+                className="block py-2 text-gray-800 dark:text-gray-200 hover:text-blue-600 transition-colors font-medium"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Services
+              </Link>
+              <Link 
+                href={`/${currentLocale}#roadmap`} 
+                className="block py-2 text-gray-800 dark:text-gray-200 hover:text-blue-600 transition-colors font-medium"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Roadmap
+              </Link>
+              <Link 
+                href={`/${currentLocale}/contact`} 
+                className="block py-2 text-gray-800 dark:text-gray-200 hover:text-blue-600 transition-colors font-medium"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Contact
+              </Link>
+            </div>
+          </div>
+        )}
       </div>
     </nav>
   )
