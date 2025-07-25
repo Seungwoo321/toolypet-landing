@@ -73,7 +73,7 @@ export const legalTranslations = {
         },
         security: {
           title: '4. 데이터 보안',
-          content: '모든 도구는 브라우저에서 실행되며, 사용자가 입력한 데이터는 서버로 전송되지 않습니다.'
+          content: '대부분의 도구는 브라우저에서 실행되며 사용자 데이터를 서버로 전송하지 않습니다. 단, 일부 기능(예: 보안 취약점 스캔, 외부 API 호출 등)은 기술적 제약으로 서버 측 처리가 필요합니다. 이 경우에도 입력된 데이터는 처리 즉시 삭제되며, 어떠한 형태로도 저장되지 않습니다.'
         },
         rights: {
           title: '5. 사용자 권리',
@@ -162,7 +162,7 @@ export const legalTranslations = {
         },
         security: {
           title: '4. Data Security',
-          content: 'All tools run in the browser, and user-entered data is not transmitted to servers.'
+          content: 'Most tools run in the browser and do not transmit user data to servers. However, some features (e.g., security vulnerability scanning, external API calls) require server-side processing due to technical constraints. Even in these cases, input data is deleted immediately after processing and is not stored in any form.'
         },
         rights: {
           title: '5. User Rights',
@@ -251,7 +251,7 @@ export const legalTranslations = {
         },
         security: {
           title: '4. データセキュリティ',
-          content: 'すべてのツールはブラウザで実行され、ユーザーが入力したデータはサーバーに送信されません。'
+          content: 'ほとんどのツールはブラウザで実行され、ユーザーデータをサーバーに送信しません。ただし、一部の機能（例：セキュリティ脆弱性スキャン、外部API呼び出しなど）は技術的制約によりサーバー側での処理が必要です。この場合でも、入力されたデータは処理後すぐに削除され、いかなる形でも保存されません。'
         },
         rights: {
           title: '5. ユーザーの権利',
@@ -340,7 +340,7 @@ export const legalTranslations = {
         },
         security: {
           title: '4. 数据安全',
-          content: '所有工具在浏览器中运行，用户输入的数据不会传输到服务器。'
+          content: '大多数工具在浏览器中运行，不会将用户数据传输到服务器。但是，某些功能（例如：安全漏洞扫描、外部API调用等）由于技术限制需要服务器端处理。即使在这些情况下，输入的数据也会在处理后立即删除，不会以任何形式存储。'
         },
         rights: {
           title: '5. 用户权利',
