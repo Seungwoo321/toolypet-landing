@@ -9,6 +9,7 @@ export function ShowcaseSection() {
       <div className="w-full px-6 sm:px-12 lg:px-24 py-20">
         <div className="space-y-32">
         <motion.div
+          id="showcase-devtools"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -38,6 +39,7 @@ export function ShowcaseSection() {
         </motion.div>
 
         <motion.div
+          id="showcase-css"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -67,6 +69,7 @@ export function ShowcaseSection() {
         </motion.div>
 
         <motion.div
+          id="showcase-seo"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
@@ -96,6 +99,7 @@ export function ShowcaseSection() {
         </motion.div>
 
         <motion.div
+          id="showcase-security"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}

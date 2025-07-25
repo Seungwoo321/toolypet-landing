@@ -13,24 +13,28 @@ export function ServicesSection({ translations }: ServicesSectionProps) {
 
   const services = [
     {
+      id: 'devtools',
       title: t.services.devtools.title,
       description: t.services.devtools.description,
       icon: <Code2 size={32} />,
       color: 'from-blue-600 to-purple-700 dark:from-blue-400 dark:to-purple-500',
     },
     {
+      id: 'css',
       title: t.services.css.title,
       description: t.services.css.description,
       icon: <Palette size={32} />,
       color: 'from-pink-600 to-red-600 dark:from-pink-400 dark:to-red-400',
     },
     {
+      id: 'seo',
       title: t.services.seo.title,
       description: t.services.seo.description,
       icon: <Search size={32} />,
       color: 'from-green-600 to-teal-600 dark:from-green-400 dark:to-teal-400',
     },
     {
+      id: 'security',
       title: t.services.security.title,
       description: t.services.security.description,
       icon: <Shield size={32} />,
@@ -57,6 +61,7 @@ export function ServicesSection({ translations }: ServicesSectionProps) {
               key={service.title}
               {...service}
               delay={index * 0.1}
+              viewMoreText={t.services.viewMore}
             />
           ))}
         </div>

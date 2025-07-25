@@ -4,14 +4,16 @@ import { motion } from 'framer-motion'
 import { ReactNode } from 'react'
 
 interface ServiceCardProps {
+  id: string
   title: string
   description: string
   icon: ReactNode
   color: string
   delay: number
+  viewMoreText: string
 }
 
-export function ServiceCard({ title, description, icon, color, delay }: ServiceCardProps) {
+export function ServiceCard({ id, title, description, icon, color, delay, viewMoreText }: ServiceCardProps) {
   return (
     <motion.div
       className="relative group"
@@ -36,8 +38,8 @@ export function ServiceCard({ title, description, icon, color, delay }: ServiceC
         
         {/* Enhanced link with better styling */}
         <div className="flex items-center justify-between">
-          <a href="#" className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-semibold group-hover:gap-3 group-hover:text-blue-700 dark:group-hover:text-blue-300 transition-all">
-            <span>자세히 보기</span>
+          <a href={`#showcase-${id}`} className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-semibold group-hover:gap-3 group-hover:text-blue-700 dark:group-hover:text-blue-300 transition-all">
+            <span>{viewMoreText}</span>
             <span className="transition-transform group-hover:translate-x-1">→</span>
           </a>
           {/* Subtle accent line */}
