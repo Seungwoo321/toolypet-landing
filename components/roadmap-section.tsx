@@ -50,7 +50,7 @@ export function RoadmapSection() {
   ]
 
   return (
-    <section ref={sectionRef} id="roadmap" className="min-h-screen flex items-center py-20 overflow-hidden">
+    <section ref={sectionRef} id="roadmap" className="min-h-screen flex items-center py-12 md:py-20 overflow-hidden">
       <div className="w-full px-6 sm:px-12 lg:px-24">
         <motion.div style={{ y, opacity }}>
         <h2 className="text-5xl md:text-6xl font-bold text-center mb-16">
@@ -58,25 +58,25 @@ export function RoadmapSection() {
         </h2>
 
         <div className="relative">
-          {/* Timeline line */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-blue-500 to-purple-500" />
+          {/* Timeline line - mobile left, desktop center */}
+          <div className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-1 h-full bg-gradient-to-b from-blue-500 to-purple-500" />
 
           {/* Timeline items */}
           {phases.map((phase, index) => (
             <motion.div
               key={phase.phase}
-              className={`relative flex items-center mb-16 ${
-                index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
+              className={`relative flex items-center mb-12 md:mb-16 ${
+                index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
               }`}
               initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
               viewport={{ once: true }}
             >
-              {/* Content */}
-              <div className={`w-1/2 ${index % 2 === 0 ? 'pr-12 text-right' : 'pl-12'}`}>
+              {/* Content - full width mobile, half width desktop */}
+              <div className={`w-full md:w-1/2 pl-20 md:pl-0 ${index % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12'}`}>
                 <motion.div
-                  className="bg-gradient-to-br from-blue-50 to-purple-50 dark:bg-gradient-to-br dark:from-gray-800 dark:to-gray-900 p-8 rounded-2xl shadow-xl"
+                  className="bg-gradient-to-br from-blue-50 to-purple-50 dark:bg-gradient-to-br dark:from-gray-800 dark:to-gray-900 p-6 md:p-8 rounded-2xl shadow-xl"
                   whileHover={{ scale: 1.05 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
@@ -87,10 +87,10 @@ export function RoadmapSection() {
                   }`}>
                     {phase.date} - {phase.status === 'completed' ? t.roadmap.status.completed : phase.status === 'in-progress' ? t.roadmap.status.inProgress : t.roadmap.status.upcoming}
                   </span>
-                  <h3 className="text-2xl font-bold mb-4">{phase.phase}: {phase.title}</h3>
+                  <h3 className="text-xl md:text-2xl font-bold mb-4">{phase.phase}: {phase.title}</h3>
                   <ul className="space-y-2">
                     {phase.items.map(item => (
-                      <li key={item} className="text-black dark:text-gray-400">
+                      <li key={item} className="text-sm md:text-base text-black dark:text-gray-400">
                         {item}
                       </li>
                     ))}
@@ -98,8 +98,8 @@ export function RoadmapSection() {
                 </motion.div>
               </div>
 
-              {/* Timeline dot */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-blue-500 rounded-full border-4 border-white dark:border-gray-900 z-10" />
+              {/* Timeline dot - mobile left, desktop center */}
+              <div className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-6 h-6 bg-blue-500 rounded-full border-4 border-white dark:border-gray-900 z-10" />
             </motion.div>
           ))}
         </div>
