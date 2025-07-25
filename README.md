@@ -86,9 +86,9 @@ This project is proprietary. Unauthorized copying and distribution is prohibited
 
 ### 📧 Contact
 
-- General Inquiries: contact@toolypet.com
-- Technical Support: support@toolypet.com
-- Bug Reports: bugs@toolypet.com
+- General Inquiries: devsiki321@gmail.com
+- Technical Support: devsiki321@gmail.com
+- Bug Reports: devsiki321@gmail.com
 
 ---
 
@@ -174,6 +174,6 @@ vercel
 
 ### 📧 문의
 
-- 일반 문의: contact@toolypet.com
-- 기술 지원: support@toolypet.com
-- 버그 신고: bugs@toolypet.com
+- 일반 문의: devsiki321@gmail.com
+- 기술 지원: devsiki321@gmail.com
+- 버그 신고: devsiki321@gmail.com

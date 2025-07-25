@@ -124,22 +124,14 @@ export const translations = {
     },
     contact: {
       title: '문의하기',
-      intro: 'Toolypet 서비스에 대한 문의사항이나 제안사항이 있으시면 아래 연락처로 연락해 주세요.',
-      general: {
-        title: '일반 문의',
-        email: 'contact@toolypet.com',
-      },
-      support: {
-        title: '기술 지원',
-        email: 'support@toolypet.com',
-      },
-      partner: {
-        title: '제휴 문의',
-        email: 'partner@toolypet.com',
-      },
-      bug: {
-        title: '버그 신고',
-        email: 'bugs@toolypet.com',
+      intro: 'Toolypet 서비스에 대한 문의사항이나 제안사항이 있으시면 아래 이메일로 연락해 주세요.',
+      emailTitle: '이메일 문의',
+      email: 'devsiki321@gmail.com',
+      inquiryTypes: {
+        general: '일반 문의 및 제안사항',
+        support: '기술 지원 및 사용 문의',
+        bug: '버그 신고 및 개선 요청',
+        partner: '제휴 및 협업 제안',
       },
       response: {
         title: '답변 안내',
@@ -276,22 +268,14 @@ export const translations = {
     },
     contact: {
       title: 'Contact Us',
-      intro: 'If you have any questions or suggestions about Toolypet services, please contact us using the information below.',
-      general: {
-        title: 'General Inquiries',
-        email: 'contact@toolypet.com',
-      },
-      support: {
-        title: 'Technical Support',
-        email: 'support@toolypet.com',
-      },
-      partner: {
-        title: 'Partnership Inquiries',
-        email: 'partner@toolypet.com',
-      },
-      bug: {
-        title: 'Bug Reports',
-        email: 'bugs@toolypet.com',
+      intro: 'If you have any questions or suggestions about Toolypet services, please contact us via email below.',
+      emailTitle: 'Email Inquiries',
+      email: 'devsiki321@gmail.com',
+      inquiryTypes: {
+        general: 'General inquiries and suggestions',
+        support: 'Technical support and usage questions',
+        bug: 'Bug reports and improvement requests',
+        partner: 'Partnership and collaboration proposals',
       },
       response: {
         title: 'Response Information',
@@ -428,22 +412,14 @@ export const translations = {
     },
     contact: {
       title: 'お問い合わせ',
-      intro: 'Toolypetサービスについてのご質問やご提案がありましたら、以下の連絡先までご連絡ください。',
-      general: {
-        title: '一般的なお問い合わせ',
-        email: 'contact@toolypet.com',
-      },
-      support: {
-        title: 'テクニカルサポート',
-        email: 'support@toolypet.com',
-      },
-      partner: {
-        title: 'パートナーシップのお問い合わせ',
-        email: 'partner@toolypet.com',
-      },
-      bug: {
-        title: 'バグ報告',
-        email: 'bugs@toolypet.com',
+      intro: 'Toolypetサービスについてのご質問やご提案がありましたら、以下のメールアドレスまでご連絡ください。',
+      emailTitle: 'メールでのお問い合わせ',
+      email: 'devsiki321@gmail.com',
+      inquiryTypes: {
+        general: '一般的なお問い合わせ・ご提案',
+        support: '技術サポート・使用方法の質問',
+        bug: 'バグ報告・改善要望',
+        partner: 'パートナーシップ・協業提案',
       },
       response: {
         title: '返信について',
@@ -580,22 +556,14 @@ export const translations = {
     },
     contact: {
       title: '联系我们',
-      intro: '如果您对Toolypet服务有任何问题或建议，请使用以下信息与我们联系。',
-      general: {
-        title: '一般咨询',
-        email: 'contact@toolypet.com',
-      },
-      support: {
-        title: '技术支持',
-        email: 'support@toolypet.com',
-      },
-      partner: {
-        title: '合作咨询',
-        email: 'partner@toolypet.com',
-      },
-      bug: {
-        title: '错误报告',
-        email: 'bugs@toolypet.com',
+      intro: '如果您对Toolypet服务有任何问题或建议，请通过以下电子邮件与我们联系。',
+      emailTitle: '电子邮件咨询',
+      email: 'devsiki321@gmail.com',
+      inquiryTypes: {
+        general: '一般咨询和建议',
+        support: '技术支持和使用问题',
+        bug: '错误报告和改进请求',
+        partner: '合作伙伴关系和合作提议',
       },
       response: {
         title: '回复信息',

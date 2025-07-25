@@ -38,7 +38,7 @@ export default function PrivacyPolicy() {
         
         <div>
           <h2 className="text-2xl font-semibold mb-3">5. 문의처</h2>
-          <p>이메일: privacy@toolypet.com</p>
+          <p>이메일: devsiki321@gmail.com</p>
         </div>
       </section>
     </main>
