@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/', '/private/'],
     },
-    sitemap: 'https://www.toolypet.com/sitemap.xml',
+    sitemap: 'https://toolypet.com/sitemap.xml',
   }
 }
