@@ -22,16 +22,16 @@ export function RoadmapSection() {
     {
       phase: `${t.roadmap.phase} 1`,
       date: "2025 Q3",
-      title: "Developer Hub Launch", 
+      title: "Developer Hub Launched", 
       items: ["DevTools Suite", "CSS Design Studio", "SEO Analyzer", "Security Tools"],
       status: "completed"
     },
     {
       phase: `${t.roadmap.phase} 2`, 
       date: "2025 Q4",
-      title: "Creative Hub & Basic Tools",
+      title: "Creative Hub & Basic Tools (예정)",
       items: ["Image Toolbox", "PDF Master", "Unit Converter", "Date & Time Calculator"],
-      status: "in-progress"
+      status: "upcoming"
     },
     {
       phase: `${t.roadmap.phase} 3`,
@@ -103,6 +103,17 @@ export function RoadmapSection() {
             </motion.div>
           ))}
         </div>
+        
+        {/* Disclaimer */}
+        <motion.p 
+          className="text-center text-sm text-gray-600 dark:text-gray-400 mt-12"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+          viewport={{ once: true }}
+        >
+          {t.roadmap.disclaimer}
+        </motion.p>
         </motion.div>
       </div>
     </section>

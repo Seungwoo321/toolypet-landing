@@ -86,6 +86,7 @@ export const translations = {
         inProgress: '진행중',
         upcoming: '예정',
       },
+      disclaimer: '* 향후 계획은 개발 상황에 따라 변경될 수 있습니다.',
     },
     newsletter: {
       title: '새로운 도구 출시 소식을 받아보세요',
@@ -141,6 +142,24 @@ export const translations = {
         note2: '주말/공휴일 문의는 평일에 순차적으로 처리됩니다',
         note3: '긴급한 버그는 최우선으로 확인합니다',
       },
+    },
+    updates: {
+      title: '업데이트',
+      completed: {
+        date: '2025년 7월',
+        title: 'Developer Hub 오픈',
+        items: [
+          'DevTools Suite 런칭 (devtools.toolypet.com)',
+          'CSS Design Studio 런칭 (css.toolypet.com)',
+          'SEO Tools Center 런칭 (seo.toolypet.com)',
+          'Security Tools 런칭 (security.toolypet.com)',
+          '메인 포털 사이트 오픈 (toolypet.com)'
+        ]
+      },
+      upcoming: {
+        title: '예정된 업데이트',
+        disclaimer: '※ 향후 계획은 개발 상황에 따라 변경될 수 있습니다.'
+      }
     },
   },
   en: {
@@ -230,6 +249,7 @@ export const translations = {
         inProgress: 'In Progress',
         upcoming: 'Upcoming',
       },
+      disclaimer: '* Future plans are subject to change based on development progress.',
     },
     newsletter: {
       title: 'Get Updates on New Tool Releases',
@@ -374,6 +394,7 @@ export const translations = {
         inProgress: '進行中',
         upcoming: '予定',
       },
+      disclaimer: '※ 今後の計画は開発状況により変更される可能性があります。',
     },
     newsletter: {
       title: '新しいツールのリリース情報を受け取る',
@@ -518,6 +539,7 @@ export const translations = {
         inProgress: '进行中',
         upcoming: '即将推出',
       },
+      disclaimer: '* 未来计划可能会根据开发进度进行调整。',
     },
     newsletter: {
       title: '获取新工具发布通知',

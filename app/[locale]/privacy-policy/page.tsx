@@ -1,44 +1,71 @@
 import type { Metadata } from 'next'
+import { type Locale } from '@/lib/i18n/translations'
+import { legalTranslations } from '@/lib/i18n/legal-translations'
 
 export const metadata: Metadata = {
   title: '개인정보처리방침 - Toolypet',
-  description: 'Toolypet 서비스의 개인정보처리방침입니다.',
+  description: 'Toolypet의 개인정보처리방침입니다.',
 }
 
-export default function PrivacyPolicy() {
+export default async function PrivacyPolicy({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>
+}) {
+  const { locale } = await params
+  const t = legalTranslations[locale] || legalTranslations.ko
+
   return (
     <main className="min-h-screen max-w-4xl mx-auto p-8">
-      <h1 className="text-4xl font-bold mb-8">개인정보처리방침</h1>
-      <p className="text-gray-600 mb-8">시행일: 2025년 7월 24일</p>
+      <h1 className="text-4xl font-bold mb-8">{t.privacy.title}</h1>
+      <p className="text-gray-600 dark:text-gray-400 mb-8">{t.privacy.lastUpdated}</p>
       
       <section className="space-y-6">
         <div>
-          <h2 className="text-2xl font-semibold mb-3">1. 개인정보의 수집 및 이용목적</h2>
-          <p>Toolypet은 서비스 제공을 위해 최소한의 개인정보만을 수집합니다.</p>
+          <h2 className="text-2xl font-semibold mb-3">{t.privacy.sections.intro.title}</h2>
+          <p className="text-black dark:text-gray-200">{t.privacy.sections.intro.content}</p>
         </div>
         
         <div>
-          <h2 className="text-2xl font-semibold mb-3">2. 수집하는 개인정보 항목</h2>
+          <h2 className="text-2xl font-semibold mb-3">{t.privacy.sections.analytics.title}</h2>
+          <p className="text-black dark:text-gray-200 mb-2">{t.privacy.sections.analytics.content}</p>
           <ul className="list-disc list-inside space-y-1">
-            <li>이메일 주소 (뉴스레터 구독 시)</li>
-            <li>접속 IP 정보</li>
-            <li>쿠키</li>
+            {t.privacy.sections.analytics.items.map((item, index) => (
+              <li key={index} className="text-black dark:text-gray-200">{item}</li>
+            ))}
+          </ul>
+          <p className="text-gray-600 dark:text-gray-400 mt-2 text-sm">{t.privacy.sections.analytics.note}</p>
+        </div>
+        
+        <div>
+          <h2 className="text-2xl font-semibold mb-3">{t.privacy.sections.cookies.title}</h2>
+          <p className="text-black dark:text-gray-200 mb-2">{t.privacy.sections.cookies.content}</p>
+          <ul className="list-disc list-inside space-y-1">
+            {t.privacy.sections.cookies.items.map((item, index) => (
+              <li key={index} className="text-black dark:text-gray-200">{item}</li>
+            ))}
           </ul>
         </div>
         
         <div>
-          <h2 className="text-2xl font-semibold mb-3">3. 개인정보의 보유 및 이용기간</h2>
-          <p>수집된 개인정보는 서비스 이용 종료 시까지 보유하며, 이용자의 요청 시 즉시 삭제합니다.</p>
+          <h2 className="text-2xl font-semibold mb-3">{t.privacy.sections.security.title}</h2>
+          <p className="text-black dark:text-gray-200">{t.privacy.sections.security.content}</p>
         </div>
         
         <div>
-          <h2 className="text-2xl font-semibold mb-3">4. 개인정보의 파기</h2>
-          <p>개인정보 보유기간이 경과하거나 처리목적이 달성된 경우 지체없이 파기합니다.</p>
+          <h2 className="text-2xl font-semibold mb-3">{t.privacy.sections.rights.title}</h2>
+          <p className="text-black dark:text-gray-200">{t.privacy.sections.rights.content}</p>
         </div>
         
         <div>
-          <h2 className="text-2xl font-semibold mb-3">5. 문의처</h2>
-          <p>이메일: devsiki321@gmail.com</p>
+          <h2 className="text-2xl font-semibold mb-3">{t.privacy.sections.contact.title}</h2>
+          <p className="text-black dark:text-gray-200">
+            {t.privacy.sections.contact.content}
+            <a href={`mailto:${t.privacy.sections.contact.email}`} className="text-blue-600 dark:text-blue-400 hover:underline">
+              {t.privacy.sections.contact.email}
+            </a>
+            {t.privacy.sections.contact.suffix}
+          </p>
         </div>
       </section>
     </main>
