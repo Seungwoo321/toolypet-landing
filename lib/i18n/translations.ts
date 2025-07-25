@@ -49,7 +49,7 @@ export const translations = {
       },
       security: {
         title: '안전한 처리',
-        description: '모든 데이터는 브라우저에서 처리되어 서버로 전송되지 않습니다.',
+        description: '대부분의 도구는 브라우저에서 처리되며, 서버 처리가 필요한 경우에도 데이터는 즉시 삭제됩니다.',
       },
       free: {
         title: '무료 사용',
@@ -212,7 +212,7 @@ export const translations = {
       },
       security: {
         title: 'Secure Processing',
-        description: 'All data is processed in your browser and never sent to servers.',
+        description: 'Most tools process data in your browser. When server processing is needed, data is deleted immediately.',
       },
       free: {
         title: 'Free to Use',
@@ -357,7 +357,7 @@ export const translations = {
       },
       security: {
         title: '安全な処理',
-        description: 'すべてのデータはブラウザで処理され、サーバーに送信されません。',
+        description: 'ほとんどのツールはブラウザで処理され、サーバー処理が必要な場合もデータは即座に削除されます。',
       },
       free: {
         title: '無料で使用',
@@ -502,7 +502,7 @@ export const translations = {
       },
       security: {
         title: '安全处理',
-        description: '所有数据都在浏览器中处理，永不发送到服务器。',
+        description: '大多数工具在浏览器中处理，需要服务器处理时数据也会立即删除。',
       },
       free: {
         title: '免费使用',

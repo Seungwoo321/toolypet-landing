@@ -2,28 +2,34 @@
 
 import { motion } from 'framer-motion'
 import { Zap, Globe, Shield, Sparkles } from 'lucide-react'
+import { translations, type Locale } from '@/lib/i18n/translations'
+import { useParams } from 'next/navigation'
 
 export function FeaturesSection() {
+  const params = useParams()
+  const locale = params.locale as Locale
+  const t = translations[locale] as typeof translations.ko
+  
   const features = [
     {
       icon: <Zap size={32} />,
-      title: '빠른 속도',
-      description: '모든 도구는 최적화되어 즉시 실행됩니다. 기다림 없이 바로 사용하세요.',
+      title: t.features.speed.title,
+      description: t.features.speed.description,
     },
     {
       icon: <Globe size={32} />,
-      title: '어디서나 접근',
-      description: '웹 기반 도구로 설치 없이 브라우저에서 바로 사용 가능합니다.',
+      title: t.features.access.title,
+      description: t.features.access.description,
     },
     {
       icon: <Shield size={32} />,
-      title: '안전한 처리',
-      description: '모든 데이터는 브라우저에서 처리되어 서버로 전송되지 않습니다.',
+      title: t.features.security.title,
+      description: t.features.security.description,
     },
     {
       icon: <Sparkles size={32} />,
-      title: '무료 사용',
-      description: '모든 기본 기능은 무료로 제공됩니다. 제한 없이 사용하세요.',
+      title: t.features.free.title,
+      description: t.features.free.description,
     },
   ]
 
@@ -39,10 +45,17 @@ export function FeaturesSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            왜 <span className="text-gradient">Toolypet</span>인가?
+            {t.features.title.split('Toolypet').map((part, index) => 
+              index === 0 ? part : (
+                <span key={index}>
+                  <span className="text-gradient">Toolypet</span>
+                  {part}
+                </span>
+              )
+            )}
           </h2>
           <p className="text-xl text-gray-700 dark:text-gray-400">
-            개발자와 디자이너를 위해 설계된 특별한 기능들
+            {t.features.subtitle}
           </p>
         </motion.div>
 
