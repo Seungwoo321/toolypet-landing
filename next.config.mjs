@@ -2,16 +2,15 @@
 const nextConfig = {
   reactStrictMode: true,
   async rewrites() {
-    return {
-      fallback: [
+    return [
         // CSS Studio
         {
-          source: '/css-studio/:locale',
-          destination: `${process.env.CSS_STUDIO_URL || 'https://css-studio.toolypet.com'}/css-studio/:locale`,
+          source: '/css/:locale',
+          destination: `${process.env.CSS_STUDIO_URL || 'https://css.toolypet.com'}/css/:locale`,
         },
         {
-          source: '/css-studio/:locale/:path*',
-          destination: `${process.env.CSS_STUDIO_URL || 'https://css-studio.toolypet.com'}/css-studio/:locale/:path*`,
+          source: '/css/:locale/:path*',
+          destination: `${process.env.CSS_STUDIO_URL || 'https://css.toolypet.com'}/css/:locale/:path*`,
         },
         // DevTools
         {
@@ -24,24 +23,23 @@ const nextConfig = {
         },
         // Security Tools
         {
-          source: '/security-tools/:locale',
-          destination: `${process.env.SECURITY_TOOLS_URL || 'https://security-tools.toolypet.com'}/security-tools/:locale`,
+          source: '/security/:locale',
+          destination: `${process.env.SECURITY_TOOLS_URL || 'https://security.toolypet.com'}/security/:locale`,
         },
         {
-          source: '/security-tools/:locale/:path*',
-          destination: `${process.env.SECURITY_TOOLS_URL || 'https://security-tools.toolypet.com'}/security-tools/:locale/:path*`,
+          source: '/security/:locale/:path*',
+          destination: `${process.env.SECURITY_TOOLS_URL || 'https://security.toolypet.com'}/security/:locale/:path*`,
         },
         // SEO Tools
         {
-          source: '/seo-tools/:locale',
-          destination: `${process.env.SEO_TOOLS_URL || 'https://seo-tools.toolypet.com'}/seo-tools/:locale`,
+          source: '/seo/:locale',
+          destination: `${process.env.SEO_TOOLS_URL || 'https://seo.toolypet.com'}/seo/:locale`,
         },
         {
-          source: '/seo-tools/:locale/:path*',
-          destination: `${process.env.SEO_TOOLS_URL || 'https://seo-tools.toolypet.com'}/seo-tools/:locale/:path*`,
+          source: '/seo/:locale/:path*',
+          destination: `${process.env.SEO_TOOLS_URL || 'https://seo.toolypet.com'}/seo/:locale/:path*`,
         },
-      ],
-    }
+      ]
   },
 }
 
