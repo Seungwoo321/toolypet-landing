@@ -26,7 +26,7 @@ export default async function Home({
       <main>
         <HeroSection translations={t} />
         <ServicesSection translations={t} />
-        <ShowcaseSection />
+        <ShowcaseSection translations={t} locale={locale} />
         <FeaturesSection />
         <RoadmapSection />
         {/* <NewsletterSection /> */}
