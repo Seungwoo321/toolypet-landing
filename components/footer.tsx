@@ -2,6 +2,11 @@ import Link from 'next/link'
 import { type Locale } from '@/lib/i18n/translations'
 
 export function Footer({ locale }: { locale: Locale }) {
+  const cssUrl = process.env.NEXT_PUBLIC_CSS_URL || 'https://css.toolypet.com'
+  const devtoolsUrl = process.env.NEXT_PUBLIC_DEVTOOLS_URL || 'https://devtools.toolypet.com'
+  const securityUrl = process.env.NEXT_PUBLIC_SECURITY_URL || 'https://security.toolypet.com'
+  const seoUrl = process.env.NEXT_PUBLIC_SEO_URL || 'https://seo.toolypet.com'
+
   return (
     <footer className="bg-gray-100 dark:bg-gray-900 py-20">
       <div className="w-full px-6 sm:px-12 lg:px-24">
@@ -17,10 +22,10 @@ export function Footer({ locale }: { locale: Locale }) {
           <div>
             <h4 className="font-semibold mb-6 text-lg">Services</h4>
             <ul className="space-y-3 text-black dark:text-gray-400">
-              <li><a href="https://devtools.toolypet.com" className="hover:text-blue-600">DevTools Suite</a></li>
-              <li><a href="https://css.toolypet.com" className="hover:text-blue-600">CSS Studio</a></li>
-              <li><a href="https://seo.toolypet.com" className="hover:text-blue-600">SEO Tools</a></li>
-              <li><a href="https://security.toolypet.com" className="hover:text-blue-600">Security Tools</a></li>
+              <li><a href={devtoolsUrl} className="hover:text-blue-600">DevTools Suite</a></li>
+              <li><a href={cssUrl} className="hover:text-blue-600">CSS Studio</a></li>
+              <li><a href={seoUrl} className="hover:text-blue-600">SEO Tools</a></li>
+              <li><a href={securityUrl} className="hover:text-blue-600">Security Tools</a></li>
             </ul>
           </div>
           
