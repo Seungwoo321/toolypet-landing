@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // 도구 카테고리 정의
   const toolCategories = [
     {
-      path: 'css-studio',
+      path: 'css',
       tools: [
         'animation', 'gradient', 'box-shadow', 'text-shadow',
         'border-radius', 'filter', 'transform', 'flexbox',
@@ -31,7 +31,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       ]
     },
     {
-      path: 'security-tools',
+      path: 'security',
       tools: [
         'password-generator', 'password-strength', 'hash-generator',
         'encryption-decryption', 'security-headers', 'csp-builder',
@@ -39,7 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       ]
     },
     {
-      path: 'seo-tools',
+      path: 'seo',
       tools: [
         'meta-tags', 'open-graph', 'robots-txt', 'sitemap-generator',
         'schema-generator', 'keyword-analyzer', 'social-preview', 'structured-data'
