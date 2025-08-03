@@ -207,8 +207,10 @@ export const translations = {
       },
       totalTools: '총 {count}개의 무료 도구를 제공합니다',
     },
-    allTools: {
-      title: 'All Tools',
+  },
+  en: {
+    hero: {
+      title: 'Toolypet.',
       description: 'Meet 34 professional tools in one place. From development to design, SEO to security.',
       categories: {
         css: 'CSS Design',
@@ -398,6 +400,8 @@ export const translations = {
         note3: 'Urgent bugs are prioritized',
       },
     },
+  },
+  ja: {
     allTools: {
       title: 'すべてのツール',
       description: '34の専門ツールを一箇所で。開発、デザイン、SEO、セキュリティまで。',
@@ -444,8 +448,6 @@ export const translations = {
       },
       totalTools: '合計{count}個の無料ツールを提供しています',
     },
-  },
-  ja: {
     hero: {
       title: 'Toolypet.',
       subtitle: '日常をもっと便利にするオンラインツール集',
