@@ -6,39 +6,39 @@ const nextConfig = {
       fallback: [
         // CSS Studio
         {
-          source: '/css-studio',
-          destination: `${process.env.CSS_STUDIO_URL || 'https://css-studio.toolypet.com'}/css-studio`,
+          source: '/:locale/css-studio',
+          destination: `${process.env.CSS_STUDIO_URL || 'https://css-studio.toolypet.com'}/css-studio/:locale`,
         },
         {
-          source: '/css-studio/:path*',
-          destination: `${process.env.CSS_STUDIO_URL || 'https://css-studio.toolypet.com'}/css-studio/:path*`,
+          source: '/:locale/css-studio/:path*',
+          destination: `${process.env.CSS_STUDIO_URL || 'https://css-studio.toolypet.com'}/css-studio/:locale/:path*`,
         },
         // DevTools
         {
-          source: '/devtools',
-          destination: `${process.env.DEVTOOLS_URL || 'https://devtools.toolypet.com'}/devtools`,
+          source: '/:locale/devtools',
+          destination: `${process.env.DEVTOOLS_URL || 'https://devtools.toolypet.com'}/devtools/:locale`,
         },
         {
-          source: '/devtools/:path*',
-          destination: `${process.env.DEVTOOLS_URL || 'https://devtools.toolypet.com'}/devtools/:path*`,
+          source: '/:locale/devtools/:path*',
+          destination: `${process.env.DEVTOOLS_URL || 'https://devtools.toolypet.com'}/devtools/:locale/:path*`,
         },
         // Security Tools
         {
-          source: '/security-tools',
-          destination: `${process.env.SECURITY_TOOLS_URL || 'https://security-tools.toolypet.com'}/security-tools`,
+          source: '/:locale/security-tools',
+          destination: `${process.env.SECURITY_TOOLS_URL || 'https://security-tools.toolypet.com'}/security-tools/:locale`,
         },
         {
-          source: '/security-tools/:path*',
-          destination: `${process.env.SECURITY_TOOLS_URL || 'https://security-tools.toolypet.com'}/security-tools/:path*`,
+          source: '/:locale/security-tools/:path*',
+          destination: `${process.env.SECURITY_TOOLS_URL || 'https://security-tools.toolypet.com'}/security-tools/:locale/:path*`,
         },
         // SEO Tools
         {
-          source: '/seo-tools',
-          destination: `${process.env.SEO_TOOLS_URL || 'https://seo-tools.toolypet.com'}/seo-tools`,
+          source: '/:locale/seo-tools',
+          destination: `${process.env.SEO_TOOLS_URL || 'https://seo-tools.toolypet.com'}/seo-tools/:locale`,
         },
         {
-          source: '/seo-tools/:path*',
-          destination: `${process.env.SEO_TOOLS_URL || 'https://seo-tools.toolypet.com'}/seo-tools/:path*`,
+          source: '/:locale/seo-tools/:path*',
+          destination: `${process.env.SEO_TOOLS_URL || 'https://seo-tools.toolypet.com'}/seo-tools/:locale/:path*`,
         },
       ],
     }
