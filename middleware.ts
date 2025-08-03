@@ -30,6 +30,6 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    '/((?!_next|api|favicon.ico|.*\\..*|css-studio|devtools|security-tools|seo-tools).*)',
+    '/((?!_next|api|favicon.ico|.*\\..*|css|devtools|security|seo).*)',
   ],
 }

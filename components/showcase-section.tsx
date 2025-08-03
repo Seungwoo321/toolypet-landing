@@ -30,25 +30,25 @@ const categoryInfo = {
     title: 'CSS Design Studio',
     description: '실시간 프리뷰와 함께하는 CSS 디자인의 새로운 경험. 그라디언트, 애니메이션, 레이아웃 등 모든 CSS 작업을 시각적으로 처리하세요.',
     features: ['실시간 프리뷰', '코드 자동 생성', '크로스 브라우저 지원'],
-    url: 'https://css.toolypet.com',
+    url: process.env.NEXT_PUBLIC_CSS_URL || 'https://css.toolypet.com',
   },
   devtools: {
     title: 'DevTools Suite',
     description: '개발 생산성을 극대화하는 전문 도구 모음. JSON 포맷터부터 정규식 테스터까지, 개발에 필요한 모든 도구를 한 곳에서.',
     features: ['빠른 변환', '오프라인 지원', '개발자 친화적'],
-    url: 'https://devtools.toolypet.com',
+    url: process.env.NEXT_PUBLIC_DEVTOOLS_URL || 'https://devtools.toolypet.com',
   },
   security: {
     title: 'Security Tools',
     description: '웹 보안을 위한 필수 도구 모음. 비밀번호 생성, 암호화, 보안 헤더 검사 등 보안 강화를 위한 모든 것.',
     features: ['강력한 암호화', '보안 검증', '취약점 분석'],
-    url: 'https://security.toolypet.com',
+    url: process.env.NEXT_PUBLIC_SECURITY_URL || 'https://security.toolypet.com',
   },
   seo: {
     title: 'SEO Tools Center',
     description: '검색 엔진 최적화를 위한 완벽한 솔루션. 메타 태그, 사이트맵, 구조화된 데이터까지 SEO의 모든 것.',
     features: ['SEO 분석', '자동 최적화', '실시간 미리보기'],
-    url: 'https://seo.toolypet.com',
+    url: process.env.NEXT_PUBLIC_SEO_URL || 'https://seo.toolypet.com',
   },
 }
 
