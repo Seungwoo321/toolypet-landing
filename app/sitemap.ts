@@ -59,11 +59,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   })
   
   // 각 도구 카테고리와 도구들
-  locales.forEach(locale => {
-    toolCategories.forEach(category => {
+  toolCategories.forEach(category => {
+    locales.forEach(locale => {
       // 카테고리 메인 페이지
       urls.push({
-        url: `${baseUrl}/${locale}/${category.path}`,
+        url: `${baseUrl}/${category.path}/${locale}`,
         lastModified: new Date(),
         changeFrequency: 'weekly',
         priority: 0.9,
@@ -71,7 +71,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       
       // 카테고리 about 페이지
       urls.push({
-        url: `${baseUrl}/${locale}/${category.path}/about`,
+        url: `${baseUrl}/${category.path}/${locale}/about`,
         lastModified: new Date(),
         changeFrequency: 'monthly',
         priority: 0.5,
@@ -79,7 +79,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       
       // 카테고리 도구 목록 페이지
       urls.push({
-        url: `${baseUrl}/${locale}/${category.path}/tools`,
+        url: `${baseUrl}/${category.path}/${locale}/tools`,
         lastModified: new Date(),
         changeFrequency: 'weekly',
         priority: 0.8,
@@ -88,7 +88,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       // 각 도구 페이지
       category.tools.forEach(tool => {
         urls.push({
-          url: `${baseUrl}/${locale}/${category.path}/tools/${tool}`,
+          url: `${baseUrl}/${category.path}/${locale}/tools/${tool}`,
           lastModified: new Date(),
           changeFrequency: 'weekly',
           priority: 0.7,

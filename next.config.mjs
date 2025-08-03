@@ -6,38 +6,38 @@ const nextConfig = {
       fallback: [
         // CSS Studio
         {
-          source: '/:locale/css-studio',
+          source: '/css-studio/:locale',
           destination: `${process.env.CSS_STUDIO_URL || 'https://css-studio.toolypet.com'}/css-studio/:locale`,
         },
         {
-          source: '/:locale/css-studio/:path*',
+          source: '/css-studio/:locale/:path*',
           destination: `${process.env.CSS_STUDIO_URL || 'https://css-studio.toolypet.com'}/css-studio/:locale/:path*`,
         },
         // DevTools
         {
-          source: '/:locale/devtools',
+          source: '/devtools/:locale',
           destination: `${process.env.DEVTOOLS_URL || 'https://devtools.toolypet.com'}/devtools/:locale`,
         },
         {
-          source: '/:locale/devtools/:path*',
+          source: '/devtools/:locale/:path*',
           destination: `${process.env.DEVTOOLS_URL || 'https://devtools.toolypet.com'}/devtools/:locale/:path*`,
         },
         // Security Tools
         {
-          source: '/:locale/security-tools',
+          source: '/security-tools/:locale',
           destination: `${process.env.SECURITY_TOOLS_URL || 'https://security-tools.toolypet.com'}/security-tools/:locale`,
         },
         {
-          source: '/:locale/security-tools/:path*',
+          source: '/security-tools/:locale/:path*',
           destination: `${process.env.SECURITY_TOOLS_URL || 'https://security-tools.toolypet.com'}/security-tools/:locale/:path*`,
         },
         // SEO Tools
         {
-          source: '/:locale/seo-tools',
+          source: '/seo-tools/:locale',
           destination: `${process.env.SEO_TOOLS_URL || 'https://seo-tools.toolypet.com'}/seo-tools/:locale`,
         },
         {
-          source: '/:locale/seo-tools/:path*',
+          source: '/seo-tools/:locale/:path*',
           destination: `${process.env.SEO_TOOLS_URL || 'https://seo-tools.toolypet.com'}/seo-tools/:locale/:path*`,
         },
       ],
