@@ -2,41 +2,37 @@
 
 import { ServiceCard } from './service-card'
 import { Code2, Palette, Search, Shield } from 'lucide-react'
-import { type TranslationKeys } from '@/lib/i18n/translations'
+import { useTranslations } from 'next-intl'
 
-interface ServicesSectionProps {
-  translations: TranslationKeys
-}
-
-export function ServicesSection({ translations }: ServicesSectionProps) {
-  const t = translations
+export function ServicesSection() {
+  const t = useTranslations('services')
 
   const services = [
     {
       id: 'devtools',
-      title: t.services.devtools.title,
-      description: t.services.devtools.description,
+      title: t('devtools.title'),
+      description: t('devtools.description'),
       icon: <Code2 size={32} />,
       color: 'from-blue-600 to-purple-700 dark:from-blue-400 dark:to-purple-500',
     },
     {
       id: 'css',
-      title: t.services.css.title,
-      description: t.services.css.description,
+      title: t('css.title'),
+      description: t('css.description'),
       icon: <Palette size={32} />,
       color: 'from-pink-600 to-red-600 dark:from-pink-400 dark:to-red-400',
     },
     {
       id: 'seo',
-      title: t.services.seo.title,
-      description: t.services.seo.description,
+      title: t('seo.title'),
+      description: t('seo.description'),
       icon: <Search size={32} />,
       color: 'from-green-600 to-teal-600 dark:from-green-400 dark:to-teal-400',
     },
     {
       id: 'security',
-      title: t.services.security.title,
-      description: t.services.security.description,
+      title: t('security.title'),
+      description: t('security.description'),
       icon: <Shield size={32} />,
       color: 'from-orange-600 to-yellow-600 dark:from-orange-400 dark:to-yellow-400',
     },
@@ -48,10 +44,10 @@ export function ServicesSection({ translations }: ServicesSectionProps) {
         <div className="w-full">
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-bold mb-4">
-            <span className="text-gradient">Our Services</span>
+            <span className="text-gradient">{t('title')}</span>
           </h2>
           <p className="text-xl text-gray-700 dark:text-gray-400 max-w-3xl mx-auto">
-            개발과 디자인 작업을 위한 강력한 도구들을 만나보세요. 모든 도구는 무료로 사용할 수 있습니다.
+            {t('subtitle')}
           </p>
         </div>
         
@@ -61,7 +57,7 @@ export function ServicesSection({ translations }: ServicesSectionProps) {
               key={service.title}
               {...service}
               delay={index * 0.1}
-              viewMoreText={t.services.viewMore}
+              viewMoreText={t('viewMore')}
             />
           ))}
         </div>

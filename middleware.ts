@@ -1,32 +1,16 @@
-import { NextResponse } from 'next/server'
-import type { NextRequest } from 'next/server'
-import Negotiator from 'negotiator'
+import createMiddleware from 'next-intl/middleware'
+import { locales } from './i18n'
 
-const locales = ['ko', 'en', 'ja', 'zh']
-const defaultLocale = 'ko'
-
-function getLocale(request: NextRequest): string {
-  const negotiatorHeaders: Record<string, string> = {}
-  request.headers.forEach((value, key) => (negotiatorHeaders[key] = value))
-
-  const languages = new Negotiator({ headers: negotiatorHeaders }).languages()
-  const matchedLocale = locales.find(locale => languages.includes(locale))
+export default createMiddleware({
+  // A list of all locales that are supported
+  locales,
   
-  return matchedLocale || defaultLocale
-}
-
-export function middleware(request: NextRequest) {
-  const pathname = request.nextUrl.pathname
-  const pathnameHasLocale = locales.some(
-    locale => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
-  )
-
-  if (pathnameHasLocale) return
-
-  const locale = getLocale(request)
-  request.nextUrl.pathname = `/${locale}${pathname}`
-  return NextResponse.redirect(request.nextUrl)
-}
+  // Used when no locale matches
+  defaultLocale: 'ko',
+  
+  // Always show locale prefix in URL
+  localePrefix: 'always'
+})
 
 export const config = {
   matcher: [

@@ -1,12 +1,12 @@
-import { translations, type Locale } from '@/lib/i18n/translations'
-import { Navigation } from '@/components/navigation'
+import { getTranslations } from 'next-intl/server'
 import { HeroSection } from '@/components/hero-section'
 import { ServicesSection } from '@/components/services-section'
 import { ShowcaseSection } from '@/components/showcase-section'
 import { FeaturesSection } from '@/components/features-section'
 import { RoadmapSection } from '@/components/roadmap-section'
 import { NewsletterSection } from '@/components/newsletter-section'
-import { Footer } from '@/components/footer'
+
+type Locale = 'ko' | 'en' | 'ja' | 'zh' | 'es' | 'pt' | 'hi'
 
 export default async function Home({
   params,
@@ -14,24 +14,15 @@ export default async function Home({
   params: Promise<{ locale: Locale }>
 }) {
   const { locale } = await params
-  const t = translations[locale] as typeof translations.ko
-  
-  if (!t) {
-    return <div>Loading...</div>
-  }
   
   return (
-    <>
-      <Navigation currentLocale={locale} />
-      <main>
-        <HeroSection translations={t} />
-        <ServicesSection translations={t} />
-        <ShowcaseSection translations={t} locale={locale} />
-        <FeaturesSection />
-        <RoadmapSection />
-        {/* <NewsletterSection /> */}
-      </main>
-      <Footer locale={locale} />
-    </>
+    <main>
+      <HeroSection />
+      <ServicesSection />
+      <ShowcaseSection locale={locale} />
+      <FeaturesSection />
+      <RoadmapSection />
+      {/* <NewsletterSection /> */}
+    </main>
   )
 }

@@ -1,0 +1,394 @@
+{
+  "hero": {
+    "title": "Toolypet.",
+    "subtitle": "あなたの生活をより便利にするオンラインツール",
+    "description": "20の強力なツール。1つのプラットフォーム。",
+    "cta": {
+      "start": "今すぐ始める",
+      "learn": "詳しく見る"
+    }
+  },
+  "nav": {
+    "home": "ホーム",
+    "services": "サービス",
+    "roadmap": "ロードマップ",
+    "contact": "お問い合わせ"
+  },
+  "services": {
+    "title": "私たちのサービス",
+    "subtitle": "開発とデザインのための強力なツールをご覧ください。すべてのツールは無料で使用できます。",
+    "devtools": {
+      "title": "DevTools Suite",
+      "description": "開発者のための必須ツール"
+    },
+    "css": {
+      "title": "CSS Design Studio",
+      "description": "CSSデザインとアニメーションツール"
+    },
+    "seo": {
+      "title": "SEO Tools Center",
+      "description": "ウェブサイト最適化のためのSEOツール"
+    },
+    "security": {
+      "title": "Security Tools",
+      "description": "セキュリティ検証と分析ツール"
+    },
+    "viewMore": "詳しく見る"
+  },
+  "features": {
+    "title": "なぜToolypetなのか？",
+    "subtitle": "開発者とデザイナーのために設計された特別な機能",
+    "speed": {
+      "title": "高速",
+      "description": "すべてのツールは即座に実行されるよう最適化されています。待つことなくすぐに使用できます。"
+    },
+    "access": {
+      "title": "どこからでもアクセス",
+      "description": "インストール不要でブラウザから直接利用できるウェブベースツール。"
+    },
+    "security": {
+      "title": "安全な処理",
+      "description": "ほとんどのツールはブラウザでデータを処理します。サーバー処理が必要な場合でも、データは即座に削除されます。"
+    },
+    "free": {
+      "title": "無料利用",
+      "description": "すべての基本機能は無料で提供されます。制限なく使用できます。"
+    }
+  },
+  "showcase": {
+    "subtitle": "34のプロフェッショナルツールを提供する4つの統合サービス",
+    "totalTools": "Toolypetは合計34の無料オンラインツールを提供しています",
+    "browserNote": "インストール不要でウェブブラウザですぐに利用可能、ほとんどのツールはクライアントサイドで動作します",
+    "toolsCount": "ツール",
+    "devtools": {
+      "title": "DevTools Suite",
+      "description": "JSONフォーマッター、Base64エンコーダー、URLエンコーダーなど、開発作業に必要なコアユーティリティを含む開発者のための必須ツール。",
+      "link": "開発ツールを使用"
+    },
+    "css": {
+      "title": "CSS Design Studio", 
+      "description": "グラデーションジェネレーター、ボックスシャドウツール、アニメーションジェネレーターなど、美しいデザインを簡単に作成するためのビジュアルCSS設計ツール。",
+      "link": "CSSツールを使用"
+    },
+    "seo": {
+      "title": "SEO Tools Center",
+      "description": "メタタグジェネレーター、構造化データバリデーター、サイトマップジェネレーターなど、SEO最適化のためのプロフェッショナルツール。",
+      "link": "SEOツールを使用"
+    },
+    "security": {
+      "title": "Security Tools",
+      "description": "パスワードジェネレーター、ハッシュジェネレーター、SSL証明書チェッカーなど、セキュリティ分析と検証のためのツール。",
+      "link": "セキュリティツールを使用"
+    }
+  },
+  "toolsGallery": {
+    "title": "ツールギャラリー",
+    "subtitle": "すべてのToolypetツールを一目で確認",
+    "description": "4つの統合サービスを通じて提供される、開発者とデザイナーのための34のプロフェッショナルツール。",
+    "services": {
+      "devtools": {
+        "title": "DevTools Suite",
+        "description": "開発者のための必須ツールセット",
+        "url": "https://devtools.toolypet.com",
+        "tools": "10ツール",
+        "status": "利用可能"
+      },
+      "css": {
+        "title": "CSS Design Studio", 
+        "description": "CSS設計のためのビジュアルツール",
+        "url": "https://css.toolypet.com",
+        "tools": "10ツール",
+        "status": "利用可能"
+      },
+      "seo": {
+        "title": "SEO Tools Center",
+        "description": "SEO最適化のためのプロフェッショナルツール",
+        "url": "https://seo.toolypet.com", 
+        "tools": "8ツール",
+        "status": "利用可能"
+      },
+      "security": {
+        "title": "Security Tools",
+        "description": "セキュリティ分析と検証ツール",
+        "url": "https://security.toolypet.com",
+        "tools": "6ツール", 
+        "status": "利用可能"
+      }
+    },
+    "features": {
+      "free": {
+        "title": "完全無料",
+        "subtitle": "すべてのツールを無料で使用"
+      },
+      "noSignup": {
+        "title": "登録不要",
+        "subtitle": "すぐに使用開始可能"
+      },
+      "responsive": {
+        "title": "レスポンシブデザイン", 
+        "subtitle": "すべてのデバイスで完璧に動作"
+      },
+      "openSource": {
+        "title": "オープンソース",
+        "subtitle": "透明で安全なコード"
+      }
+    },
+    "cta": {
+      "title": "今すぐ始める",
+      "subtitle": "お好みのツールを選択してすぐに使用を開始してください",
+      "button": "ツールを探索"
+    }
+  },
+  "roadmap": {
+    "title": "製品ロードマップ",
+    "phase": "フェーズ",
+    "status": {
+      "completed": "完了",
+      "inProgress": "進行中",
+      "upcoming": "予定"
+    },
+    "disclaimer": "* 将来の計画は開発の進行状況によって変更される場合があります。"
+  },
+  "newsletter": {
+    "title": "新しいツールリリースの更新を受け取る",
+    "subtitle": "新しいツールと機能の月次更新をメールで受け取ります。",
+    "placeholder": "メールアドレスを入力",
+    "subscribe": "購読",
+    "privacy": "スパムメールは送信しません。いつでも購読を解除できます。"
+  },
+  "navigation": {
+    "services": "サービス",
+    "toolsGallery": "ツールギャラリー",
+    "roadmap": "ロードマップ",
+    "contact": "お問い合わせ"
+  },
+  "footer": {
+    "about": {
+      "title": "Toolypetについて",
+      "description": "Toolypetは開発者とデザイナーのための無料オンラインツールコレクションです。"
+    },
+    "quickLinks": {
+      "title": "クイックリンク",
+      "services": "サービス",
+      "roadmap": "ロードマップ",
+      "contact": "お問い合わせ",
+      "privacy": "プライバシーポリシー",
+      "terms": "利用規約",
+      "updates": "更新情報"
+    },
+    "updates": {
+      "title": "最新の更新",
+      "item1": "DevTools Suite ローンチ",
+      "item2": "CSS Design Studio ベータ",
+      "item3": "SEO Tools 近日公開",
+      "item4": "Security Tools 開発中"
+    },
+    "newsletter": {
+      "title": "ニュースレター",
+      "description": "最新のツールと更新情報を取得。",
+      "placeholder": "メールアドレス",
+      "button": "購読"
+    },
+    "copyright": "© 2025 Toolypet. All rights reserved."
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "intro": "Toolypetサービスについて質問や提案がございましたら、下記のメールアドレスまでお気軽にお問い合わせください。",
+    "emailTitle": "メールでのお問い合わせ",
+    "email": "devsiki321@gmail.com",
+    "inquiryTypes": {
+      "general": "一般的なお問い合わせと提案",
+      "support": "技術サポートと使用方法に関する質問",
+      "bug": "バグ報告と改善要求",
+      "partner": "パートナーシップと協力の提案"
+    },
+    "response": {
+      "title": "回答について",
+      "intro": "こんにちは！Toolypetは個人開発者によって運営されています。",
+      "time": "すべてのお問い合わせは個人的に確認し回答しており、平均回答時間は2-3日です。",
+      "note1": "開発作業中は回答が遅れる場合があります",
+      "note2": "週末・祝日のお問い合わせは平日に処理されます",
+      "note3": "緊急のバグは優先的に確認します"
+    }
+  },
+  "allTools": {
+    "title": "すべてのツール",
+    "description": "一箇所で34のプロフェッショナルツールに出会う。開発からデザイン、SEOからセキュリティまで。",
+    "categories": {
+      "css": "CSSデザイン",
+      "devtools": "開発ツール",
+      "security": "セキュリティツール",
+      "seo": "SEOツール"
+    },
+    "tools": {
+      "gradient": "グラデーションジェネレーター",
+      "animation": "アニメーションビルダー",
+      "boxShadow": "ボックスシャドウ",
+      "textShadow": "テキストシャドウ",
+      "borderRadius": "ボーダーラディウス",
+      "filter": "CSSフィルター",
+      "transform": "トランスフォーム効果",
+      "flexbox": "Flexboxプレイグラウンド",
+      "grid": "グリッドジェネレーター",
+      "cubicBezier": "キュービックベジエ",
+      "jsonFormatter": "JSONフォーマッター",
+      "base64": "Base64エンコーダー",
+      "urlEncoder": "URLエンコーダー",
+      "jwtDecoder": "JWTデコーダー",
+      "regexTester": "正規表現テスター",
+      "hashGenerator": "ハッシュジェネレーター",
+      "timestampConverter": "タイムスタンプコンバーター",
+      "uuidGenerator": "UUIDジェネレーター",
+      "passwordGenerator": "パスワードジェネレーター",
+      "passwordStrength": "パスワード強度チェッカー",
+      "encryptionDecryption": "暗号化/復号化",
+      "securityHeaders": "セキュリティヘッダーチェッカー",
+      "cspBuilder": "CSPビルダー",
+      "sslChecker": "SSLチェッカー",
+      "vulnerabilityScanner": "脆弱性スキャナー",
+      "metaTags": "メタタグジェネレーター",
+      "openGraph": "オープングラフ",
+      "robotsTxt": "robots.txtジェネレーター",
+      "sitemapGenerator": "サイトマップジェネレーター",
+      "schemaGenerator": "スキーマジェネレーター",
+      "keywordAnalyzer": "キーワードアナライザー",
+      "socialPreview": "ソーシャルプレビュー",
+      "structuredData": "構造化データ"
+    },
+    "totalTools": "合計{count}の無料ツールを提供しています"
+  },
+  "terms": {
+    "title": "利用規約",
+    "lastUpdated": "最終更新日: 2025年7月25日",
+    "sections": {
+      "intro": {
+        "title": "1. サービス紹介",
+        "content": "Toolypetは個人によって運営される無料オンラインツールコレクションサービスです。すべてのツールは登録なしで無料で使用できます。"
+      },
+      "usage": {
+        "title": "2. サービス利用",
+        "items": {
+          "0": "すべてのサービスは無料で提供されます",
+          "1": "登録やログインは必要ありません",
+          "2": "サービスは「現状のまま」提供されます"
+        }
+      },
+      "restrictions": {
+        "title": "3. 利用制限",
+        "intro": "以下の行為は禁止されています：",
+        "items": {
+          "0": "サービスの正常な運営を妨害する行為",
+          "1": "自動化された手段によってサービスに過度な負荷をかける行為",
+          "2": "悪意のある目的でサービスを使用する行為"
+        }
+      },
+      "disclaimer": {
+        "title": "4. 免責事項",
+        "items": {
+          "0": "このサービスは個人開発者によって運営されており、サービス中断やエラーについて責任を負いません",
+          "1": "ツール使用による損失や損害について一切責任を負いません",
+          "2": "サービスは予告なく変更または中止される場合があります"
+        }
+      },
+      "ads": {
+        "title": "5. 広告",
+        "content": "サービス運営をサポートするためにGoogle AdSense広告が表示される場合があります。広告内容はGoogleによって提供され、運営者は広告内容について責任を負いません。"
+      },
+      "contact": {
+        "title": "6. お問い合わせ",
+        "content": "サービスに関するお問い合わせは ",
+        "email": "devsiki321@gmail.com",
+        "suffix": " までご連絡ください。"
+      }
+    }
+  },
+  "privacy": {
+    "title": "プライバシーポリシー",
+    "lastUpdated": "最終更新日: 2025年7月25日",
+    "sections": {
+      "intro": {
+        "title": "1. 個人情報の収集",
+        "content": "Toolypetは登録不要のサービスで、ユーザーの個人情報を直接収集しません。"
+      },
+      "analytics": {
+        "title": "2. 分析ツール",
+        "content": "サービス改善のために以下のツールが使用される場合があります：",
+        "items": {
+          "0": "Google Analytics: 訪問者統計の収集",
+          "1": "Google AdSense: 広告表示と関連するクッキーの使用"
+        },
+        "note": "これらのサービスは独自のプライバシーポリシーに従ってデータを処理します。"
+      },
+      "cookies": {
+        "title": "3. クッキーの使用",
+        "content": "サービスは以下の目的でクッキーを使用します：",
+        "items": {
+          "0": "ユーザー設定の保存（ダークモード、言語設定など）",
+          "1": "分析と統計",
+          "2": "広告表示"
+        }
+      },
+      "security": {
+        "title": "4. データセキュリティ",
+        "content": "ほとんどのツールはブラウザで実行され、ユーザーデータをサーバーに送信しません。ただし、一部の機能（セキュリティ脆弱性スキャン、外部API呼び出しなど）は技術的制約によりサーバーサイド処理が必要です。この場合でも、入力データは処理後即座に削除され、いかなる形でも保存されません。"
+      },
+      "rights": {
+        "title": "5. ユーザーの権利",
+        "content": "クッキーを拒否または削除することができます。ただし、一部の機能が制限される場合があります。"
+      },
+      "contact": {
+        "title": "6. お問い合わせ",
+        "content": "プライバシーに関するお問い合わせは ",
+        "email": "devsiki321@gmail.com",
+        "suffix": " までご連絡ください。"
+      }
+    }
+  },
+  "updates": {
+    "title": "更新情報",
+    "completed": {
+      "date": "2025年7月",
+      "title": "Developer Hub ローンチ",
+      "items": {
+        "0": "DevTools Suite ローンチ (devtools.toolypet.com)",
+        "1": "CSS Design Studio ローンチ (css.toolypet.com)",
+        "2": "SEO Tools Center ローンチ (seo.toolypet.com)",
+        "3": "Security Tools ローンチ (security.toolypet.com)",
+        "4": "メインポータルサイト開設 (toolypet.com)"
+      }
+    },
+    "upcoming": {
+      "title": "今後の更新",
+      "phases": {
+        "0": {
+          "date": "2025 Q4 - Creative Hub & Basic Tools",
+          "items": {
+            "0": "Image Toolbox 近日公開",
+            "1": "PDF Master 近日公開",
+            "2": "Unit Converter 近日公開",
+            "3": "Date & Time Calculator 近日公開"
+          }
+        },
+        "1": {
+          "date": "2026 Q1 - Korea Hub",
+          "items": {
+            "0": "給与計算機 近日公開",
+            "1": "税金計算機 近日公開",
+            "2": "不動産計算機 近日公開",
+            "3": "社会保険計算機 近日公開"
+          }
+        },
+        "2": {
+          "date": "2026 Q2 - Business & Finance Hub",
+          "items": {
+            "0": "Finance Calculator Pro 近日公開",
+            "1": "Business Tools Suite 近日公開",
+            "2": "Invoice Generator 近日公開",
+            "3": "Currency Converter 近日公開"
+          }
+        }
+      },
+      "disclaimer": "* 将来の計画は開発の進行状況によって変更される場合があります。"
+    }
+  }
+}

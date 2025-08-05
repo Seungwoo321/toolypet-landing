@@ -2,13 +2,10 @@
 
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
-import { translations, type Locale } from '@/lib/i18n/translations'
-import { useParams } from 'next/navigation'
+import { useTranslations } from 'next-intl'
 
 export function RoadmapSection() {
-  const params = useParams()
-  const locale = params.locale as Locale
-  const t = translations[locale] as typeof translations.ko
+  const t = useTranslations('roadmap')
   const sectionRef = useRef<HTMLElement>(null)
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -20,28 +17,28 @@ export function RoadmapSection() {
 
   const phases = [
     {
-      phase: `${t.roadmap.phase} 1`,
+      phase: `${t('phase')} 1`,
       date: "2025 Q3",
       title: "Developer Hub Launched", 
       items: ["DevTools Suite", "CSS Design Studio", "SEO Analyzer", "Security Tools"],
       status: "completed"
     },
     {
-      phase: `${t.roadmap.phase} 2`, 
+      phase: `${t('phase')} 2`, 
       date: "2025 Q4",
       title: "Creative Hub & Basic Tools (예정)",
       items: ["Image Toolbox", "PDF Master", "Unit Converter", "Date & Time Calculator"],
       status: "upcoming"
     },
     {
-      phase: `${t.roadmap.phase} 3`,
+      phase: `${t('phase')} 3`,
       date: "2026 Q1", 
       title: "Korea Hub Launch",
       items: ["급여 계산기", "세금 계산기", "부동산 계산기", "4대보험 계산기"],
       status: "upcoming"
     },
     {
-      phase: `${t.roadmap.phase} 4`,
+      phase: `${t('phase')} 4`,
       date: "2026 Q2",
       title: "Business & Finance Hub",
       items: ["Finance Calculator Pro", "Business Tools Suite", "Invoice Generator", "Currency Converter"],
@@ -54,7 +51,7 @@ export function RoadmapSection() {
       <div className="w-full px-6 sm:px-12 lg:px-24">
         <motion.div style={{ y, opacity }}>
         <h2 className="text-5xl md:text-6xl font-bold text-center mb-16">
-          <span className="text-gradient">{t.roadmap.title}</span>
+          <span className="text-gradient">{t('title')}</span>
         </h2>
 
         <div className="relative">
@@ -85,7 +82,7 @@ export function RoadmapSection() {
                     phase.status === 'in-progress' ? 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200' :
                     'bg-purple-100 text-purple-800 dark:bg-gray-800 dark:text-gray-200'
                   }`}>
-                    {phase.date} - {phase.status === 'completed' ? t.roadmap.status.completed : phase.status === 'in-progress' ? t.roadmap.status.inProgress : t.roadmap.status.upcoming}
+                    {phase.date} - {phase.status === 'completed' ? t('status.completed') : phase.status === 'in-progress' ? t('status.inProgress') : t('status.upcoming')}
                   </span>
                   <h3 className="text-xl md:text-2xl font-bold mb-4">{phase.phase}: {phase.title}</h3>
                   <ul className="space-y-2">
@@ -112,7 +109,7 @@ export function RoadmapSection() {
           transition={{ duration: 0.8, delay: 0.8 }}
           viewport={{ once: true }}
         >
-          {t.roadmap.disclaimer}
+          {t('disclaimer')}
         </motion.p>
         </motion.div>
       </div>

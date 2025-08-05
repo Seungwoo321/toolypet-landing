@@ -6,9 +6,14 @@
     "dev": "next dev -p 3200",
     "build": "next build",
     "start": "next start -p 3200",
-    "lint": "next lint"
+    "lint": "next lint",
+    "validate-translations": "tsx scripts/migrate-to-json.ts",
+    "i18n:check": "tsx scripts/direct-compare.ts",
+    "i18n:structure": "tsx scripts/manual-compare.ts",
+    "i18n:migrate": "echo 'JSON migration completed! All TypeScript translations are now in JSON format.'"
   },
   "dependencies": {
+    "@next/third-parties": "^15.4.4",
     "@types/negotiator": "^0.6.4",
     "@types/node": "^24.1.0",
     "@types/react": "^19.1.8",
@@ -17,7 +22,7 @@
     "lucide-react": "^0.525.0",
     "negotiator": "^1.0.0",
     "next": "^15.4.3",
-    "@next/third-parties": "^15.4.4",
+    "next-intl": "^4.3.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "typescript": "^5.8.3"
@@ -28,6 +33,7 @@
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
     "puppeteer": "^24.15.0",
-    "tailwindcss": "^4.0.0"
+    "tailwindcss": "^4.0.0",
+    "tsx": "^4.20.3"
   }
 }

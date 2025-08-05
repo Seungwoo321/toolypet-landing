@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://toolypet.com'
-  const locales = ['ko', 'en', 'ja', 'zh']
+  const locales = ['ko', 'en', 'ja', 'zh', 'es']
   
   // 루트 도메인 페이지들
   const pages = [
