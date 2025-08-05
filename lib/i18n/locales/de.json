@@ -1,0 +1,394 @@
+{
+  "hero": {
+    "title": "Toolypet.",
+    "subtitle": "Online-Tools, die Ihr Leben einfacher machen",
+    "description": "20 leistungsstarke Tools. Eine Plattform.",
+    "cta": {
+      "start": "Loslegen",
+      "learn": "Mehr erfahren"
+    }
+  },
+  "nav": {
+    "home": "Startseite",
+    "services": "Services",
+    "roadmap": "Roadmap",
+    "contact": "Kontakt"
+  },
+  "services": {
+    "title": "Unsere Services",
+    "subtitle": "Entdecken Sie leistungsstarke Tools für Entwicklung und Design. Alle Tools sind kostenlos nutzbar.",
+    "devtools": {
+      "title": "DevTools Suite",
+      "description": "Unverzichtbare Tools für Entwickler"
+    },
+    "css": {
+      "title": "CSS Design Studio",
+      "description": "CSS-Design- und Animations-Tools"
+    },
+    "seo": {
+      "title": "SEO Tools Center",
+      "description": "SEO-Tools für Website-Optimierung"
+    },
+    "security": {
+      "title": "Security Tools",
+      "description": "Sicherheitsvalidierung und -analyse-Tools"
+    },
+    "viewMore": "Mehr erfahren"
+  },
+  "features": {
+    "title": "Warum Toolypet?",
+    "subtitle": "Besondere Features für Entwickler und Designer",
+    "speed": {
+      "title": "Hohe Geschwindigkeit",
+      "description": "Alle Tools sind für sofortige Ausführung optimiert. Nutzen Sie sie sofort ohne Wartezeiten."
+    },
+    "access": {
+      "title": "Überall verfügbar",
+      "description": "Web-basierte Tools direkt in Ihrem Browser verfügbar, ohne Installation."
+    },
+    "security": {
+      "title": "Sichere Verarbeitung",
+      "description": "Die meisten Tools verarbeiten Daten in Ihrem Browser. Bei erforderlicher Server-Verarbeitung werden Daten sofort gelöscht."
+    },
+    "free": {
+      "title": "Kostenlos nutzbar",
+      "description": "Alle Grundfunktionen werden kostenlos bereitgestellt. Nutzen Sie ohne Einschränkungen."
+    }
+  },
+  "showcase": {
+    "subtitle": "4 integrierte Services mit 34 professionellen Tools",
+    "totalTools": "Toolypet bietet insgesamt 34 kostenlose Online-Tools",
+    "browserNote": "Sofort in Ihrem Webbrowser verfügbar ohne Installation, die meisten Tools laufen client-seitig",
+    "toolsCount": "Tools",
+    "devtools": {
+      "title": "DevTools Suite",
+      "description": "Unverzichtbare Tools für Entwickler einschließlich JSON-Formatter, Base64-Encoder, URL-Encoder und andere Kern-Utilities für Entwicklungsarbeiten.",
+      "link": "Dev Tools nutzen"
+    },
+    "css": {
+      "title": "CSS Design Studio", 
+      "description": "Visuelle Tools für CSS-Design einschließlich Gradient-Generator, Box-Shadow-Tool, Animations-Generator zur einfachen Erstellung schöner Designs.",
+      "link": "CSS Tools nutzen"
+    },
+    "seo": {
+      "title": "SEO Tools Center",
+      "description": "Professionelle Tools für SEO-Optimierung einschließlich Meta-Tag-Generator, Structured-Data-Validator, Sitemap-Generator und mehr.",
+      "link": "SEO Tools nutzen"
+    },
+    "security": {
+      "title": "Security Tools",
+      "description": "Tools für Sicherheitsanalyse und -verifizierung einschließlich Passwort-Generator, Hash-Generator, SSL-Zertifikat-Checker und mehr.",
+      "link": "Security Tools nutzen"
+    }
+  },
+  "toolsGallery": {
+    "title": "Tools Galerie",
+    "subtitle": "Entdecken Sie alle Toolypet-Tools auf einen Blick",
+    "description": "34 professionelle Tools für Entwickler und Designer bereitgestellt durch 4 integrierte Services.",
+    "services": {
+      "devtools": {
+        "title": "DevTools Suite",
+        "description": "Unverzichtbares Toolset für Entwickler",
+        "url": "https://devtools.toolypet.com",
+        "tools": "10 Tools",
+        "status": "Verfügbar"
+      },
+      "css": {
+        "title": "CSS Design Studio", 
+        "description": "Visuelle Tools für CSS-Design",
+        "url": "https://css.toolypet.com",
+        "tools": "10 Tools",
+        "status": "Verfügbar"
+      },
+      "seo": {
+        "title": "SEO Tools Center",
+        "description": "Professionelle Tools für SEO-Optimierung",
+        "url": "https://seo.toolypet.com", 
+        "tools": "8 Tools",
+        "status": "Verfügbar"
+      },
+      "security": {
+        "title": "Security Tools",
+        "description": "Sicherheitsanalyse und -verifizierungs-Tools",
+        "url": "https://security.toolypet.com",
+        "tools": "6 Tools", 
+        "status": "Verfügbar"
+      }
+    },
+    "features": {
+      "free": {
+        "title": "Völlig kostenlos",
+        "subtitle": "Nutzen Sie alle Tools kostenlos"
+      },
+      "noSignup": {
+        "title": "Keine Registrierung erforderlich",
+        "subtitle": "Sofort einsatzbereit"
+      },
+      "responsive": {
+        "title": "Responsive Design", 
+        "subtitle": "Funktioniert perfekt auf allen Geräten"
+      },
+      "openSource": {
+        "title": "Open Source",
+        "subtitle": "Transparenter und sicherer Code"
+      }
+    },
+    "cta": {
+      "title": "Jetzt loslegen",
+      "subtitle": "Wählen Sie Ihr gewünschtes Tool und beginnen Sie sofort mit der Nutzung",
+      "button": "Tools erkunden"
+    }
+  },
+  "roadmap": {
+    "title": "Produkt-Roadmap",
+    "phase": "Phase",
+    "status": {
+      "completed": "Abgeschlossen",
+      "inProgress": "In Bearbeitung",
+      "upcoming": "Geplant"
+    },
+    "disclaimer": "* Zukunftspläne können sich basierend auf dem Entwicklungsfortschritt ändern."
+  },
+  "newsletter": {
+    "title": "Updates zu neuen Tool-Releases erhalten",
+    "subtitle": "Erhalten Sie monatliche Updates über neue Tools und Features per E-Mail.",
+    "placeholder": "E-Mail-Adresse eingeben",
+    "subscribe": "Abonnieren",
+    "privacy": "Wir senden niemals Spam. Sie können sich jederzeit abmelden."
+  },
+  "navigation": {
+    "services": "Services",
+    "toolsGallery": "Tools Galerie",
+    "roadmap": "Roadmap",
+    "contact": "Kontakt"
+  },
+  "footer": {
+    "about": {
+      "title": "Über Toolypet",
+      "description": "Toolypet ist eine kostenlose Online-Tool-Sammlung für Entwickler und Designer."
+    },
+    "quickLinks": {
+      "title": "Schnelle Links",
+      "services": "Services",
+      "roadmap": "Roadmap",
+      "contact": "Kontakt",
+      "privacy": "Datenschutzrichtlinie",
+      "terms": "Nutzungsbedingungen",
+      "updates": "Updates"
+    },
+    "updates": {
+      "title": "Neueste Updates",
+      "item1": "DevTools Suite gestartet",
+      "item2": "CSS Design Studio Beta",
+      "item3": "SEO Tools in Kürze",
+      "item4": "Security Tools in Entwicklung"
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Erhalten Sie die neuesten Tools und Updates.",
+      "placeholder": "E-Mail-Adresse",
+      "button": "Abonnieren"
+    },
+    "copyright": "© 2025 Toolypet. Alle Rechte vorbehalten."
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "intro": "Wenn Sie Fragen oder Vorschläge zu Toolypet-Services haben, kontaktieren Sie uns bitte über die unten stehende E-Mail-Adresse.",
+    "emailTitle": "E-Mail-Anfragen",
+    "email": "devsiki321@gmail.com",
+    "inquiryTypes": {
+      "general": "Allgemeine Anfragen und Vorschläge",
+      "support": "Technischer Support und Nutzungsfragen",
+      "bug": "Fehlerberichte und Verbesserungsanfragen",
+      "partner": "Partnerschaft und Kooperationsvorschläge"
+    },
+    "response": {
+      "title": "Antwort-Informationen",
+      "intro": "Hallo! Toolypet wird von einem Solo-Entwickler betrieben.",
+      "time": "Alle Anfragen werden persönlich geprüft und beantwortet, mit einer durchschnittlichen Antwortzeit von 2-3 Tagen.",
+      "note1": "Antworten können sich während Entwicklungsarbeiten verzögern",
+      "note2": "Wochenend-/Feiertags-Anfragen werden an Werktagen bearbeitet",
+      "note3": "Dringende Bugs werden priorisiert"
+    }
+  },
+  "allTools": {
+    "title": "Alle Tools",
+    "description": "Lernen Sie 34 professionelle Tools an einem Ort kennen. Von Entwicklung über Design bis hin zu SEO und Sicherheit.",
+    "categories": {
+      "css": "CSS Design",
+      "devtools": "Dev Tools",
+      "security": "Security Tools",
+      "seo": "SEO Tools"
+    },
+    "tools": {
+      "gradient": "Gradient Generator",
+      "animation": "Animation Builder",
+      "boxShadow": "Box Shadow",
+      "textShadow": "Text Shadow",
+      "borderRadius": "Border Radius",
+      "filter": "CSS Filter",
+      "transform": "Transform Effekte",
+      "flexbox": "Flexbox Playground",
+      "grid": "Grid Generator",
+      "cubicBezier": "Cubic Bezier",
+      "jsonFormatter": "JSON Formatter",
+      "base64": "Base64 Encoder",
+      "urlEncoder": "URL Encoder",
+      "jwtDecoder": "JWT Decoder",
+      "regexTester": "Regex Tester",
+      "hashGenerator": "Hash Generator",
+      "timestampConverter": "Timestamp Converter",
+      "uuidGenerator": "UUID Generator",
+      "passwordGenerator": "Passwort Generator",
+      "passwordStrength": "Passwort-Stärke-Checker",
+      "encryptionDecryption": "Verschlüsselung/Entschlüsselung",
+      "securityHeaders": "Security Headers Checker",
+      "cspBuilder": "CSP Builder",
+      "sslChecker": "SSL Checker",
+      "vulnerabilityScanner": "Vulnerability Scanner",
+      "metaTags": "Meta Tags Generator",
+      "openGraph": "Open Graph",
+      "robotsTxt": "robots.txt Generator",
+      "sitemapGenerator": "Sitemap Generator",
+      "schemaGenerator": "Schema Generator",
+      "keywordAnalyzer": "Keyword Analyzer",
+      "socialPreview": "Social Preview",
+      "structuredData": "Structured Data"
+    },
+    "totalTools": "Wir bieten insgesamt {count} kostenlose Tools"
+  },
+  "terms": {
+    "title": "Nutzungsbedingungen",
+    "lastUpdated": "Zuletzt aktualisiert: 25. Juli 2025",
+    "sections": {
+      "intro": {
+        "title": "1. Service-Einführung",
+        "content": "Toolypet ist ein kostenloser Online-Tool-Sammlungsservice, der von einer Einzelperson betrieben wird. Alle Tools können kostenlos ohne Registrierung genutzt werden."
+      },
+      "usage": {
+        "title": "2. Service-Nutzung",
+        "items": {
+          "0": "Alle Services werden kostenlos bereitgestellt",
+          "1": "Keine Registrierung oder Anmeldung erforderlich",
+          "2": "Services werden \"wie besehen\" bereitgestellt"
+        }
+      },
+      "restrictions": {
+        "title": "3. Nutzungseinschränkungen",
+        "intro": "Die folgenden Aktionen sind verboten:",
+        "items": {
+          "0": "Störung des normalen Service-Betriebs",
+          "1": "Übermäßige Belastung der Services durch automatisierte Mittel",
+          "2": "Nutzung der Services für böswillige Zwecke"
+        }
+      },
+      "disclaimer": {
+        "title": "4. Haftungsausschluss",
+        "items": {
+          "0": "Dieser Service wird von einem Solo-Entwickler betrieben und übernimmt keine Verantwortung für Service-Unterbrechungen oder Fehler",
+          "1": "Keine Haftung für Verluste oder Schäden, die aus der Tool-Nutzung resultieren",
+          "2": "Services können ohne Vorankündigung geändert oder eingestellt werden"
+        }
+      },
+      "ads": {
+        "title": "5. Werbung",
+        "content": "Google AdSense-Werbung kann zur Unterstützung des Service-Betriebs angezeigt werden. Werbeinhalte werden von Google bereitgestellt, und der Betreiber ist nicht für Werbeinhalte verantwortlich."
+      },
+      "contact": {
+        "title": "6. Kontakt",
+        "content": "Für Service-Anfragen kontaktieren Sie bitte ",
+        "email": "devsiki321@gmail.com",
+        "suffix": "."
+      }
+    }
+  },
+  "privacy": {
+    "title": "Datenschutzrichtlinie",
+    "lastUpdated": "Zuletzt aktualisiert: 25. Juli 2025",
+    "sections": {
+      "intro": {
+        "title": "1. Erhebung persönlicher Informationen",
+        "content": "Toolypet ist ein Service ohne Registrierung und sammelt nicht direkt persönliche Benutzerinformationen."
+      },
+      "analytics": {
+        "title": "2. Analytics-Tools",
+        "content": "Die folgenden Tools können zur Service-Verbesserung verwendet werden:",
+        "items": {
+          "0": "Google Analytics: Sammlung von Besucherstatistiken",
+          "1": "Google AdSense: Anzeigendarstellung und damit verbundene Cookie-Nutzung"
+        },
+        "note": "Diese Services verarbeiten Daten gemäß ihren eigenen Datenschutzrichtlinien."
+      },
+      "cookies": {
+        "title": "3. Cookie-Nutzung",
+        "content": "Der Service nutzt Cookies für folgende Zwecke:",
+        "items": {
+          "0": "Speichern von Benutzerpräferenzen (z.B. Dark Mode, Spracheinstellungen)",
+          "1": "Analytics und Statistiken",
+          "2": "Anzeigendarstellung"
+        }
+      },
+      "security": {
+        "title": "4. Datensicherheit",
+        "content": "Die meisten Tools laufen im Browser und übertragen keine Benutzerdaten an Server. Einige Features (z.B. Sicherheits-Vulnerability-Scanning, externe API-Aufrufe) erfordern jedoch aufgrund technischer Einschränkungen server-seitige Verarbeitung. Auch in diesen Fällen werden Eingabedaten sofort nach der Verarbeitung gelöscht und in keiner Form gespeichert."
+      },
+      "rights": {
+        "title": "5. Benutzerrechte",
+        "content": "Sie können Cookies ablehnen oder löschen. Einige Features können jedoch eingeschränkt sein."
+      },
+      "contact": {
+        "title": "6. Kontakt",
+        "content": "Für datenschutzbezogene Anfragen kontaktieren Sie bitte ",
+        "email": "devsiki321@gmail.com",
+        "suffix": "."
+      }
+    }
+  },
+  "updates": {
+    "title": "Updates",
+    "completed": {
+      "date": "Juli 2025",
+      "title": "Developer Hub gestartet",
+      "items": {
+        "0": "DevTools Suite gestartet (devtools.toolypet.com)",
+        "1": "CSS Design Studio gestartet (css.toolypet.com)",
+        "2": "SEO Tools Center gestartet (seo.toolypet.com)",
+        "3": "Security Tools gestartet (security.toolypet.com)",
+        "4": "Haupt-Portal-Site eröffnet (toolypet.com)"
+      }
+    },
+    "upcoming": {
+      "title": "Kommende Updates",
+      "phases": {
+        "0": {
+          "date": "2025 Q4 - Creative Hub & Basic Tools",
+          "items": {
+            "0": "Image Toolbox in Kürze",
+            "1": "PDF Master in Kürze",
+            "2": "Unit Converter in Kürze",
+            "3": "Date & Time Calculator in Kürze"
+          }
+        },
+        "1": {
+          "date": "2026 Q1 - Korea Hub",
+          "items": {
+            "0": "Gehaltsrechner in Kürze",
+            "1": "Steuerrechner in Kürze",
+            "2": "Immobilienrechner in Kürze",
+            "3": "Sozialversicherungsrechner in Kürze"
+          }
+        },
+        "2": {
+          "date": "2026 Q2 - Business & Finance Hub",
+          "items": {
+            "0": "Finance Calculator Pro in Kürze",
+            "1": "Business Tools Suite in Kürze",
+            "2": "Invoice Generator in Kürze",
+            "3": "Currency Converter in Kürze"
+          }
+        }
+      },
+      "disclaimer": "* Zukunftspläne können sich basierend auf dem Entwicklungsfortschritt ändern."
+    }
+  }
+}

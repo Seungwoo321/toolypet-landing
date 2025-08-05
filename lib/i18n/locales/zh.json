@@ -1,0 +1,394 @@
+{
+  "hero": {
+    "title": "Toolypet.",
+    "subtitle": "让您的生活更轻松的在线工具",
+    "description": "20个强大的工具。一个平台。",
+    "cta": {
+      "start": "开始使用",
+      "learn": "了解更多"
+    }
+  },
+  "nav": {
+    "home": "首页",
+    "services": "服务",
+    "roadmap": "路线图",
+    "contact": "联系我们"
+  },
+  "services": {
+    "title": "我们的服务",
+    "subtitle": "发现用于开发和设计的强大工具。所有工具都是免费使用的。",
+    "devtools": {
+      "title": "DevTools Suite",
+      "description": "开发者必备工具"
+    },
+    "css": {
+      "title": "CSS Design Studio",
+      "description": "CSS设计和动画工具"
+    },
+    "seo": {
+      "title": "SEO Tools Center",
+      "description": "网站优化的SEO工具"
+    },
+    "security": {
+      "title": "Security Tools",
+      "description": "安全验证和分析工具"
+    },
+    "viewMore": "了解更多"
+  },
+  "features": {
+    "title": "为什么选择Toolypet？",
+    "subtitle": "为开发者和设计师设计的特殊功能",
+    "speed": {
+      "title": "高速度",
+      "description": "所有工具都经过优化，可以即时执行。无需等待，立即使用。"
+    },
+    "access": {
+      "title": "随处访问",
+      "description": "基于Web的工具，无需安装即可在浏览器中直接使用。"
+    },
+    "security": {
+      "title": "安全处理",
+      "description": "大多数工具在您的浏览器中处理数据。当需要服务器处理时，数据会立即删除。"
+    },
+    "free": {
+      "title": "免费使用",
+      "description": "所有基本功能都免费提供。无限制使用。"
+    }
+  },
+  "showcase": {
+    "subtitle": "4个集成服务提供34个专业工具",
+    "totalTools": "Toolypet提供总共34个免费在线工具",
+    "browserNote": "无需安装即可在网络浏览器中立即使用，大多数工具在客户端运行",
+    "toolsCount": "工具",
+    "devtools": {
+      "title": "DevTools Suite",
+      "description": "开发者必备工具，包括JSON格式化器、Base64编码器、URL编码器和其他开发工作的核心实用程序。",
+      "link": "使用开发工具"
+    },
+    "css": {
+      "title": "CSS Design Studio", 
+      "description": "CSS设计的可视化工具，包括渐变生成器、盒阴影工具、动画生成器，轻松创建美丽的设计。",
+      "link": "使用CSS工具"
+    },
+    "seo": {
+      "title": "SEO Tools Center",
+      "description": "SEO优化的专业工具，包括元标签生成器、结构化数据验证器、站点地图生成器等。",
+      "link": "使用SEO工具"
+    },
+    "security": {
+      "title": "Security Tools",
+      "description": "安全分析和验证工具，包括密码生成器、哈希生成器、SSL证书检查器等。",
+      "link": "使用安全工具"
+    }
+  },
+  "toolsGallery": {
+    "title": "工具画廊",
+    "subtitle": "一目了然地发现所有Toolypet工具",
+    "description": "通过4个集成服务为开发者和设计师提供的34个专业工具。",
+    "services": {
+      "devtools": {
+        "title": "DevTools Suite",
+        "description": "开发者必备工具集",
+        "url": "https://devtools.toolypet.com",
+        "tools": "10个工具",
+        "status": "可用"
+      },
+      "css": {
+        "title": "CSS Design Studio", 
+        "description": "CSS设计的可视化工具",
+        "url": "https://css.toolypet.com",
+        "tools": "10个工具",
+        "status": "可用"
+      },
+      "seo": {
+        "title": "SEO Tools Center",
+        "description": "SEO优化的专业工具",
+        "url": "https://seo.toolypet.com", 
+        "tools": "8个工具",
+        "status": "可用"
+      },
+      "security": {
+        "title": "Security Tools",
+        "description": "安全分析和验证工具",
+        "url": "https://security.toolypet.com",
+        "tools": "6个工具", 
+        "status": "可用"
+      }
+    },
+    "features": {
+      "free": {
+        "title": "完全免费",
+        "subtitle": "免费使用所有工具"
+      },
+      "noSignup": {
+        "title": "无需注册",
+        "subtitle": "立即可用"
+      },
+      "responsive": {
+        "title": "响应式设计", 
+        "subtitle": "在所有设备上完美运行"
+      },
+      "openSource": {
+        "title": "开源",
+        "subtitle": "透明和安全的代码"
+      }
+    },
+    "cta": {
+      "title": "立即开始",
+      "subtitle": "选择您想要的工具并立即开始使用",
+      "button": "探索工具"
+    }
+  },
+  "roadmap": {
+    "title": "产品路线图",
+    "phase": "阶段",
+    "status": {
+      "completed": "已完成",
+      "inProgress": "进行中",
+      "upcoming": "即将到来"
+    },
+    "disclaimer": "* 未来计划可能会根据开发进度而改变。"
+  },
+  "newsletter": {
+    "title": "获取新工具发布的更新",
+    "subtitle": "通过电子邮件接收新工具和功能的月度更新。",
+    "placeholder": "输入您的电子邮件地址",
+    "subscribe": "订阅",
+    "privacy": "我们从不发送垃圾邮件。您可以随时取消订阅。"
+  },
+  "navigation": {
+    "services": "服务",
+    "toolsGallery": "工具画廊",
+    "roadmap": "路线图",
+    "contact": "联系我们"
+  },
+  "footer": {
+    "about": {
+      "title": "关于Toolypet",
+      "description": "Toolypet是一个为开发者和设计师提供的免费在线工具集合。"
+    },
+    "quickLinks": {
+      "title": "快速链接",
+      "services": "服务",
+      "roadmap": "路线图",
+      "contact": "联系我们",
+      "privacy": "隐私政策",
+      "terms": "服务条款",
+      "updates": "更新"
+    },
+    "updates": {
+      "title": "最新更新",
+      "item1": "DevTools Suite 已发布",
+      "item2": "CSS Design Studio 测试版",
+      "item3": "SEO Tools 即将推出",
+      "item4": "Security Tools 开发中"
+    },
+    "newsletter": {
+      "title": "通讯",
+      "description": "获取最新工具和更新。",
+      "placeholder": "电子邮件地址",
+      "button": "订阅"
+    },
+    "copyright": "© 2025 Toolypet. 保留所有权利。"
+  },
+  "contact": {
+    "title": "联系我们",
+    "intro": "如果您对Toolypet服务有任何问题或建议，请通过下面的电子邮件与我们联系。",
+    "emailTitle": "电子邮件咨询",
+    "email": "devsiki321@gmail.com",
+    "inquiryTypes": {
+      "general": "一般咨询和建议",
+      "support": "技术支持和使用问题",
+      "bug": "错误报告和改进请求",
+      "partner": "合作伙伴关系和协作提议"
+    },
+    "response": {
+      "title": "回复信息",
+      "intro": "您好！Toolypet由一名独立开发者运营。",
+      "time": "所有咨询都会个人审查和回复，平均回复时间为2-3天。",
+      "note1": "开发工作期间回复可能会延迟",
+      "note2": "周末/节假日咨询在工作日处理",
+      "note3": "紧急错误会优先处理"
+    }
+  },
+  "allTools": {
+    "title": "所有工具",
+    "description": "在一个地方遇见34个专业工具。从开发到设计，从SEO到安全。",
+    "categories": {
+      "css": "CSS设计",
+      "devtools": "开发工具",
+      "security": "安全工具",
+      "seo": "SEO工具"
+    },
+    "tools": {
+      "gradient": "渐变生成器",
+      "animation": "动画构建器",
+      "boxShadow": "盒阴影",
+      "textShadow": "文字阴影",
+      "borderRadius": "边框圆角",
+      "filter": "CSS滤镜",
+      "transform": "变换效果",
+      "flexbox": "Flexbox游乐场",
+      "grid": "网格生成器",
+      "cubicBezier": "立方贝塞尔",
+      "jsonFormatter": "JSON格式化器",
+      "base64": "Base64编码器",
+      "urlEncoder": "URL编码器",
+      "jwtDecoder": "JWT解码器",
+      "regexTester": "正则表达式测试器",
+      "hashGenerator": "哈希生成器",
+      "timestampConverter": "时间戳转换器",
+      "uuidGenerator": "UUID生成器",
+      "passwordGenerator": "密码生成器",
+      "passwordStrength": "密码强度检查器",
+      "encryptionDecryption": "加密/解密",
+      "securityHeaders": "安全头检查器",
+      "cspBuilder": "CSP构建器",
+      "sslChecker": "SSL检查器",
+      "vulnerabilityScanner": "漏洞扫描器",
+      "metaTags": "元标签生成器",
+      "openGraph": "开放图谱",
+      "robotsTxt": "robots.txt生成器",
+      "sitemapGenerator": "站点地图生成器",
+      "schemaGenerator": "模式生成器",
+      "keywordAnalyzer": "关键词分析器",
+      "socialPreview": "社交预览",
+      "structuredData": "结构化数据"
+    },
+    "totalTools": "我们提供总共{count}个免费工具"
+  },
+  "terms": {
+    "title": "服务条款",
+    "lastUpdated": "最后更新：2025年7月25日",
+    "sections": {
+      "intro": {
+        "title": "1. 服务介绍",
+        "content": "Toolypet是由个人运营的免费在线工具集合服务。所有工具都可以无需注册免费使用。"
+      },
+      "usage": {
+        "title": "2. 服务使用",
+        "items": {
+          "0": "所有服务都免费提供",
+          "1": "无需注册或登录",
+          "2": "服务按\"现状\"提供"
+        }
+      },
+      "restrictions": {
+        "title": "3. 使用限制",
+        "intro": "禁止以下行为：",
+        "items": {
+          "0": "干扰服务的正常运行",
+          "1": "通过自动化手段对服务施加过度负载",
+          "2": "将服务用于恶意目的"
+        }
+      },
+      "disclaimer": {
+        "title": "4. 免责声明",
+        "items": {
+          "0": "本服务由独立开发者运营，不对服务中断或错误承担责任",
+          "1": "不对因使用工具而导致的任何损失或损害承担责任",
+          "2": "服务可能会在不通知的情况下更改或停止"
+        }
+      },
+      "ads": {
+        "title": "5. 广告",
+        "content": "可能会显示Google AdSense广告以支持服务运营。广告内容由Google提供，运营者不对广告内容负责。"
+      },
+      "contact": {
+        "title": "6. 联系",
+        "content": "如有服务咨询，请联系 ",
+        "email": "devsiki321@gmail.com",
+        "suffix": "。"
+      }
+    }
+  },
+  "privacy": {
+    "title": "隐私政策",
+    "lastUpdated": "最后更新：2025年7月25日",
+    "sections": {
+      "intro": {
+        "title": "1. 个人信息收集",
+        "content": "Toolypet是一个无需注册的服务，不直接收集用户个人信息。"
+      },
+      "analytics": {
+        "title": "2. 分析工具",
+        "content": "可能会使用以下工具来改进服务：",
+        "items": {
+          "0": "Google Analytics：收集访问者统计信息",
+          "1": "Google AdSense：广告显示和相关cookie使用"
+        },
+        "note": "这些服务根据各自的隐私政策处理数据。"
+      },
+      "cookies": {
+        "title": "3. Cookie使用",
+        "content": "服务使用cookie用于以下目的：",
+        "items": {
+          "0": "保存用户偏好（如深色模式、语言设置）",
+          "1": "分析和统计",
+          "2": "广告显示"
+        }
+      },
+      "security": {
+        "title": "4. 数据安全",
+        "content": "大多数工具在浏览器中运行，不向服务器传输用户数据。但是，某些功能（如安全漏洞扫描、外部API调用）由于技术限制需要服务器端处理。即使在这些情况下，输入数据也会在处理后立即删除，不以任何形式存储。"
+      },
+      "rights": {
+        "title": "5. 用户权利",
+        "content": "您可以拒绝或删除cookie。但是，某些功能可能会受到限制。"
+      },
+      "contact": {
+        "title": "6. 联系",
+        "content": "如有隐私相关咨询，请联系 ",
+        "email": "devsiki321@gmail.com",
+        "suffix": "。"
+      }
+    }
+  },
+  "updates": {
+    "title": "更新",
+    "completed": {
+      "date": "2025年7月",
+      "title": "开发者中心启动",
+      "items": {
+        "0": "DevTools Suite 启动 (devtools.toolypet.com)",
+        "1": "CSS Design Studio 启动 (css.toolypet.com)",
+        "2": "SEO Tools Center 启动 (seo.toolypet.com)",
+        "3": "Security Tools 启动 (security.toolypet.com)",
+        "4": "主门户网站开放 (toolypet.com)"
+      }
+    },
+    "upcoming": {
+      "title": "即将到来的更新",
+      "phases": {
+        "0": {
+          "date": "2025 Q4 - Creative Hub & Basic Tools",
+          "items": {
+            "0": "Image Toolbox 即将推出",
+            "1": "PDF Master 即将推出",
+            "2": "Unit Converter 即将推出",
+            "3": "Date & Time Calculator 即将推出"
+          }
+        },
+        "1": {
+          "date": "2026 Q1 - Korea Hub",
+          "items": {
+            "0": "薪资计算器 即将推出",
+            "1": "税务计算器 即将推出",
+            "2": "房地产计算器 即将推出",
+            "3": "社会保险计算器 即将推出"
+          }
+        },
+        "2": {
+          "date": "2026 Q2 - Business & Finance Hub",
+          "items": {
+            "0": "Finance Calculator Pro 即将推出",
+            "1": "Business Tools Suite 即将推出",
+            "2": "Invoice Generator 即将推出",
+            "3": "Currency Converter 即将推出"
+          }
+        }
+      },
+      "disclaimer": "* 未来计划可能会根据开发进度而改变。"
+    }
+  }
+}

@@ -2,34 +2,31 @@
 
 import { motion } from 'framer-motion'
 import { Zap, Globe, Shield, Sparkles } from 'lucide-react'
-import { translations, type Locale } from '@/lib/i18n/translations'
-import { useParams } from 'next/navigation'
+import { useTranslations } from 'next-intl'
 
 export function FeaturesSection() {
-  const params = useParams()
-  const locale = params.locale as Locale
-  const t = translations[locale] as typeof translations.ko
+  const t = useTranslations('features')
   
   const features = [
     {
       icon: <Zap size={32} />,
-      title: t.features.speed.title,
-      description: t.features.speed.description,
+      title: t('speed.title'),
+      description: t('speed.description'),
     },
     {
       icon: <Globe size={32} />,
-      title: t.features.access.title,
-      description: t.features.access.description,
+      title: t('access.title'),
+      description: t('access.description'),
     },
     {
       icon: <Shield size={32} />,
-      title: t.features.security.title,
-      description: t.features.security.description,
+      title: t('security.title'),
+      description: t('security.description'),
     },
     {
       icon: <Sparkles size={32} />,
-      title: t.features.free.title,
-      description: t.features.free.description,
+      title: t('free.title'),
+      description: t('free.description'),
     },
   ]
 
@@ -45,7 +42,7 @@ export function FeaturesSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            {t.features.title.split('Toolypet').map((part, index) => 
+            {t('title').split('Toolypet').map((part, index) => 
               index === 0 ? part : (
                 <span key={index}>
                   <span className="text-gradient">Toolypet</span>
@@ -55,7 +52,7 @@ export function FeaturesSection() {
             )}
           </h2>
           <p className="text-xl text-gray-700 dark:text-gray-400">
-            {t.features.subtitle}
+            {t('subtitle')}
           </p>
         </motion.div>
 

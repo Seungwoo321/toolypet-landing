@@ -2,14 +2,10 @@
 
 import { motion } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
-import { type TranslationKeys } from '@/lib/i18n/translations'
+import { useTranslations } from 'next-intl'
 
-interface HeroSectionProps {
-  translations: TranslationKeys
-}
-
-export function HeroSection({ translations }: HeroSectionProps) {
-  const t = translations
+export function HeroSection() {
+  const t = useTranslations('hero')
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -74,7 +70,7 @@ export function HeroSection({ translations }: HeroSectionProps) {
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <span className="text-gradient">{t.hero.title}</span>
+          <span className="text-gradient">{t('title')}</span>
         </motion.h1>
         
         <motion.p
@@ -84,7 +80,7 @@ export function HeroSection({ translations }: HeroSectionProps) {
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          {t.hero.subtitle}
+          {t('subtitle')}
         </motion.p>
         
         <motion.p
@@ -94,7 +90,7 @@ export function HeroSection({ translations }: HeroSectionProps) {
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          {t.hero.description}
+          {t('description')}
         </motion.p>
 
         <motion.div
@@ -106,11 +102,11 @@ export function HeroSection({ translations }: HeroSectionProps) {
         >
           <a href="#services" className="inline-block w-full sm:w-auto">
             <button className="w-full sm:w-auto min-w-[180px] py-4 px-8 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-full text-lg font-medium transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-[1.02] active:scale-[0.98]">
-              {t.hero.cta?.start || '시작하기'}
+              {t('cta.start')}
             </button>
           </a>
           {/* <button className="w-full sm:w-auto min-w-[180px] py-4 px-8 bg-white dark:bg-gray-900 text-black dark:text-white rounded-full text-lg font-medium transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-[1.02] active:scale-[0.98] border-2 border-gray-200 dark:border-gray-700">
-            {t.hero.cta?.learn || '더 알아보기'}
+            {t('cta.learn')}
           </button> */}
         </motion.div>
         </div>

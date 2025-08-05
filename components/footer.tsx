@@ -1,7 +1,13 @@
+'use client'
+
 import Link from 'next/link'
-import { type Locale } from '@/lib/i18n/translations'
+import { useTranslations } from 'next-intl'
+
+type Locale = 'ko' | 'en' | 'ja' | 'zh' | 'es' | 'pt' | 'hi' | 'de'
 
 export function Footer({ locale }: { locale: Locale }) {
+  const heroT = useTranslations('hero')
+  const footerT = useTranslations('footer')
   const cssUrl = process.env.NEXT_PUBLIC_CSS_URL || 'https://css.toolypet.com'
   const devtoolsUrl = process.env.NEXT_PUBLIC_DEVTOOLS_URL || 'https://devtools.toolypet.com'
   const securityUrl = process.env.NEXT_PUBLIC_SECURITY_URL || 'https://security.toolypet.com'
@@ -15,12 +21,12 @@ export function Footer({ locale }: { locale: Locale }) {
           <div>
             <h3 className="text-2xl font-bold mb-6">Toolypet</h3>
             <p className="text-black dark:text-gray-400">
-              일상을 더 편리하게 만드는 온라인 도구 모음
+              {heroT('subtitle')}
             </p>
           </div>
           
           <div>
-            <h4 className="font-semibold mb-6 text-lg">Services</h4>
+            <h4 className="font-semibold mb-6 text-lg">{footerT('quickLinks.services')}</h4>
             <ul className="space-y-3 text-black dark:text-gray-400">
               <li><a href={devtoolsUrl} className="hover:text-blue-600">DevTools Suite</a></li>
               <li><a href={cssUrl} className="hover:text-blue-600">CSS Studio</a></li>
@@ -30,12 +36,12 @@ export function Footer({ locale }: { locale: Locale }) {
           </div>
           
           <div>
-            <h4 className="font-semibold mb-6 text-lg">Company</h4>
+            <h4 className="font-semibold mb-6 text-lg">{locale === 'ko' ? '정보' : locale === 'en' ? 'About' : locale === 'ja' ? '情報' : locale === 'zh' ? '关于' : locale === 'es' ? 'Acerca de' : locale === 'pt' ? 'Sobre' : locale === 'hi' ? 'के बारे में' : locale === 'de' ? 'Über' : 'About'}</h4>
             <ul className="space-y-3 text-black dark:text-gray-400">
-              <li><Link href={`/${locale}/privacy-policy`} className="hover:text-blue-600">Privacy Policy</Link></li>
-              <li><Link href={`/${locale}/terms`} className="hover:text-blue-600">Terms of Service</Link></li>
-              <li><Link href={`/${locale}/contact`} className="hover:text-blue-600">Contact</Link></li>
-              <li><Link href={`/${locale}/updates`} className="hover:text-blue-600">Updates</Link></li>
+              <li><Link href={`/${locale}/privacy-policy`} className="hover:text-blue-600">{footerT('quickLinks.privacy')}</Link></li>
+              <li><Link href={`/${locale}/terms`} className="hover:text-blue-600">{footerT('quickLinks.terms')}</Link></li>
+              <li><Link href={`/${locale}/contact`} className="hover:text-blue-600">{footerT('quickLinks.contact')}</Link></li>
+              <li><Link href={`/${locale}/updates`} className="hover:text-blue-600">{footerT('quickLinks.updates')}</Link></li>
             </ul>
           </div>
           
@@ -60,7 +66,7 @@ export function Footer({ locale }: { locale: Locale }) {
         </div>
         
         <div className="border-t border-gray-200 dark:border-gray-800 pt-12 mt-12 text-center text-black dark:text-gray-400">
-          <p>&copy; 2025 Toolypet. All rights reserved.</p>
+          <p>{footerT('copyright')}</p>
         </div>
         </div>
       </div>

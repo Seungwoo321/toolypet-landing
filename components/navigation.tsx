@@ -4,21 +4,28 @@ import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { Globe, Menu, X } from 'lucide-react'
 import { useState } from 'react'
-import { type Locale } from '@/lib/i18n/translations'
+import { useTranslations } from 'next-intl'
+
+type Locale = 'ko' | 'en' | 'ja' | 'zh' | 'es' | 'pt' | 'hi' | 'de'
 import { ThemeToggle } from './theme-toggle'
 
-const locales = ['ko', 'en', 'ja', 'zh'] as const
+const locales = ['ko', 'en', 'ja', 'zh', 'es', 'pt', 'hi', 'de'] as const
 const localeNames = {
   ko: '한국어',
   en: 'English',
   ja: '日本語',
   zh: '中文',
+  es: 'Español',
+  pt: 'Português',
+  hi: 'हिन्दी',
+  de: 'Deutsch',
 }
 
 export function Navigation({ currentLocale }: { currentLocale: Locale }) {
   const pathname = usePathname()
   const [isLangOpen, setIsLangOpen] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const t = useTranslations('navigation')
 
   const switchLocale = (newLocale: Locale) => {
     const segments = pathname.split('/')
@@ -37,13 +44,16 @@ export function Navigation({ currentLocale }: { currentLocale: Locale }) {
           <div className="flex items-center gap-4">
             <div className="hidden md:flex items-center gap-6">
               <Link href={`/${currentLocale}#services`} className="text-gray-800 dark:text-gray-200 hover:text-blue-600 transition-colors font-medium">
-                Services
+                {t('services')}
+              </Link>
+              <Link href={`/${currentLocale}/tools-gallery`} className="text-gray-800 dark:text-gray-200 hover:text-blue-600 transition-colors font-medium">
+                {t('toolsGallery')}
               </Link>
               <Link href={`/${currentLocale}#roadmap`} className="text-gray-800 dark:text-gray-200 hover:text-blue-600 transition-colors font-medium">
-                Roadmap
+                {t('roadmap')}
               </Link>
               <Link href={`/${currentLocale}/contact`} className="text-gray-800 dark:text-gray-200 hover:text-blue-600 transition-colors font-medium">
-                Contact
+                {t('contact')}
               </Link>
             </div>
             
@@ -96,21 +106,28 @@ export function Navigation({ currentLocale }: { currentLocale: Locale }) {
                 className="block py-2 text-gray-800 dark:text-gray-200 hover:text-blue-600 transition-colors font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Services
+                {t('services')}
+              </Link>
+              <Link 
+                href={`/${currentLocale}/tools-gallery`} 
+                className="block py-2 text-gray-800 dark:text-gray-200 hover:text-blue-600 transition-colors font-medium"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t('toolsGallery')}
               </Link>
               <Link 
                 href={`/${currentLocale}#roadmap`} 
                 className="block py-2 text-gray-800 dark:text-gray-200 hover:text-blue-600 transition-colors font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Roadmap
+                {t('roadmap')}
               </Link>
               <Link 
                 href={`/${currentLocale}/contact`} 
                 className="block py-2 text-gray-800 dark:text-gray-200 hover:text-blue-600 transition-colors font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Contact
+                {t('contact')}
               </Link>
             </div>
           </div>
